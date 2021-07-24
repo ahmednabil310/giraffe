@@ -444,6 +444,12 @@ body {
 }
 
 .software-page {
+  .first-three-sections {
+    background-image: url(../assets/images/software/first-3-bg.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
   .first-section {
     .first-section__header {
       div {
@@ -466,6 +472,24 @@ body {
       right: 0;
       width: 60%;
       max-height: 100%;
+    }
+  }
+
+  .map-section {
+    background-image: url(../assets/images/software/line-bg.png);
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+    padding-top: 4.125rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 12.8125rem;
+    margin-top: 8.75rem;
+    .map-section__text {
+      h5 {
+        font-size: 1.125rem;
+        margin-bottom: 0.8125rem;
+        margin-top: 1.5625rem;
+      }
     }
   }
 
