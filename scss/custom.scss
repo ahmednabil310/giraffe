@@ -551,19 +551,36 @@ body {
   }
 
   .fifth-section {
-    h3 {
-      width: 400px;
-      position: relative;
-      bottom: 28%;
-      left: 50%;
+    padding-top: 5.1875rem;
+    padding-bottom: 8rem;
+    .fifth-section__img__text {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 400px;
+      padding: 35px;
+      background-color: white;
+      box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.04);
+      transform: skew(0deg, -7deg);
+      h3 {
+        transform: skew(0deg, 7deg);
+      }
     }
     .fifth-section__text {
+      margin-top: 5.4375rem;
+      padding-left: 6%;
       & > * {
         margin-bottom: 2.125rem;
       }
+      button {
+        margin-top: 0.625;
+      }
     }
     .fifth-section__img {
-      padding-right: 40px;
+      padding-right: 0;
+      background-image: url(../assets/images/software/security-footage.png);
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 
