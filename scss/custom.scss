@@ -80,13 +80,13 @@ $nav-link-color: $dark;
   input {
     max-width: 404px;
     margin-right: 1.375rem;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       margin-right: 0;
       width: 100%;
       margin-bottom: 29px;
     }
   }
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     flex-direction: column;
   }
 }
@@ -102,7 +102,7 @@ $nav-link-color: $dark;
   @include media-breakpoint-down(lg) {
     padding: 0 60px;
   }
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     padding: 0 24px;
   }
 }
@@ -161,13 +161,13 @@ $nav-link-color: $dark;
   background-image: url("../assets/images/home/bg-ten.png");
   padding-top: 29px;
   padding-bottom: 77px;
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     padding-top: 50px;
     padding-bottom: 108px;
   }
   h2 {
     margin-bottom: 1.875rem;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       font-size: 28px;
       line-height: 43px;
       margin-bottom: 43px;
@@ -181,9 +181,29 @@ $nav-link-color: $dark;
   background-size: cover;
   padding-bottom: 3.125rem;
   padding-top: 2.5rem;
-
-  & > * {
+  .blog-section__text {
     margin-bottom: 3.1875rem;
+
+    h2 {
+      @include media-breakpoint-down(lg) {
+        font-size: 36px;
+        line-height: 43px;
+      }
+    }
+  }
+  h5 {
+    margin-bottom: 18px;
+  }
+
+  p {
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 20px;
+    }
+  }
+  button {
+    @include media-breakpoint-down(lg) {
+      margin-top: 23px;
+    }
   }
 }
 
@@ -194,13 +214,13 @@ $nav-link-color: $dark;
     position: relative;
     .first-section__header {
       padding-bottom: 325px;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         padding-bottom: 2px;
       }
 
       h1 {
         margin-bottom: 42px;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           margin-bottom: 23px;
         }
       }
@@ -210,7 +230,7 @@ $nav-link-color: $dark;
       right: 0;
       bottom: 0;
       width: 60%;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         width: 88%;
       }
     }
@@ -228,13 +248,13 @@ $nav-link-color: $dark;
     background-image: url("../assets/images/home/second-bg.png");
     padding-top: 29px;
     padding-bottom: 77px;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding-top: 50px;
       padding-bottom: 108px;
     }
     h3 {
       margin-bottom: 1.875rem;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         font-size: 28px;
         margin-bottom: 52px;
       }
@@ -245,7 +265,7 @@ $nav-link-color: $dark;
     position: relative;
     padding-top: 70px;
     padding-bottom: 64px;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding-bottom: 24px;
     }
     .fourth-section__img {
@@ -254,13 +274,13 @@ $nav-link-color: $dark;
       top: 0;
       width: 50%;
       max-height: 100%;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         width: 95%;
       }
     }
     .fourth-section__text {
       padding-left: 87px;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         padding-left: 0;
         h2 {
           font-size: 28px;
@@ -281,7 +301,7 @@ $nav-link-color: $dark;
       .foruth-section__text__first {
         font-size: 1.125rem;
         line-height: 33px;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           font-size: 14px;
         }
       }
@@ -307,7 +327,7 @@ $nav-link-color: $dark;
 
   .sixth-section {
     padding-bottom: 64px;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding-top: 3px;
     }
     .sixth-section__videos {
@@ -317,7 +337,7 @@ $nav-link-color: $dark;
           margin-top: 71px;
           margin-bottom: 37px;
           font-weight: bold;
-          @include media-breakpoint-down(md) {
+          @include media-breakpoint-down(lg) {
             font-size: 28px;
             margin-top: 36px;
             margin-bottom: 18px;
@@ -331,7 +351,7 @@ $nav-link-color: $dark;
       bottom: 0;
       width: 40.5%;
       max-height: 100%;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         width: 72%;
       }
     }
@@ -343,14 +363,14 @@ $nav-link-color: $dark;
     background-size: cover;
     padding-top: 48px;
     padding-bottom: 28px;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding-bottom: 35px;
     }
     div {
       & > * {
         margin-bottom: 35px;
       }
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         font-size: 16px;
         h3 {
           font-size: 28px;
@@ -366,14 +386,14 @@ $nav-link-color: $dark;
     background-size: cover;
     padding-top: 3.5rem;
     padding-bottom: 4.0625rem;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding-top: 48px;
       padding-bottom: 91px;
     }
     h3 {
       margin-bottom: 19px;
       line-height: 45px;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         font-size: 28px;
         margin-bottom: 25px;
       }
@@ -381,7 +401,7 @@ $nav-link-color: $dark;
     h4 {
       margin-bottom: 3.5rem;
       line-height: 48px;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         font-size: 24px;
         margin-bottom: 51px;
       }
@@ -395,7 +415,7 @@ $nav-link-color: $dark;
     background-position: top right;
     .nineth-section__list {
       margin-top: 7.875rem;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         order: 2;
         margin-top: 0;
       }
@@ -403,7 +423,7 @@ $nav-link-color: $dark;
         margin-left: 1.25rem;
         width: 91%;
         margin-bottom: 54px;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           font-size: 14px;
           width: 84%;
           line-height: 21px;
@@ -412,7 +432,7 @@ $nav-link-color: $dark;
         h5 {
           font-weight: 600;
           margin-bottom: 0px;
-          @include media-breakpoint-down(md) {
+          @include media-breakpoint-down(lg) {
             font-size: 18px;
             margin-bottom: 8px;
           }
@@ -425,7 +445,8 @@ $nav-link-color: $dark;
     .nineth-section-imges {
       .nineth-section-img-ph {
         margin-bottom: 5.625rem;
-        @include media-breakpoint-down(md) {
+        width: 87%;
+        @include media-breakpoint-down(lg) {
           margin-bottom: 0;
         }
       }
@@ -435,7 +456,7 @@ $nav-link-color: $dark;
         right: 0;
         max-height: 100%;
         width: 41.5%;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           width: 87%;
         }
       }
