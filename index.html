@@ -296,7 +296,7 @@
 
       <section class="container">
         <div class="sixth-section section-container row position-relative">
-          <div class="col-6 sixth-section__videos">
+          <div class="col-lg-6 col-12 sixth-section__videos">
             <div class="">
               <h2>The control unit explained</h2>
               <img
@@ -314,9 +314,14 @@
               />
             </div>
           </div>
-          <div class="col-6 sixth-section__img">
+          <div class="col-lg-6 col-9">
             <img
-              class="img-fluid"
+              class="img-fluid sixth-section__img"
+              src="./assets/images/home/phone-img.png"
+              alt="hand holding app"
+            />
+            <img
+              class="img-fluid invisible"
               src="./assets/images/home/phone-img.png"
               alt="hand holding app"
             />
@@ -362,7 +367,7 @@
             justify-content-center
           "
         >
-          <div class="col-8 p-0 text-center">
+          <div class="col-lg-8 col-12 p-0 text-center">
             <h3 class="text-hallelujah text-dark fw-bold">
               How tall are you? Can you see the obvious?
             </h3>
@@ -379,7 +384,7 @@
 
       <section class="container">
         <div class="nineth-section section-container row position-relative">
-          <div class="col-6 nineth-section__list">
+          <div class="col-lg-6 col-12 nineth-section__list">
             <ul class="ps-0">
               <li class="d-flex">
                 <div>
@@ -451,15 +456,15 @@
               </li>
             </ul>
           </div>
-          <div class="col-6">
+          <div class="col-lg-6 col-12 nineth-section-imges">
             <img
               class="img-fluid invisible nineth-section-img-ph"
-              src="./assets/images/home/bg-nine.png"
+              src="./assets/images/home/giraffe-height-sm.png"
               alt="giraffe"
             />
             <img
               class="img-fluid nineth-section-img"
-              src="./assets/images/home/bg-nine.png"
+              src="./assets/images/home/giraffe-height-sm.png"
               alt="giraffe"
             />
           </div>
@@ -476,8 +481,10 @@
             align-items-center
           "
         >
-          <div class="col-6 text-center">
-            <h2 class="text-hallelujah text-dark">Just show me the demo</h2>
+          <div class="col-12 col-lg-6 text-center">
+            <h2 class="text-hallelujah text-dark">
+              Just show me <br class="d-block d-lg-none" />the demo
+            </h2>
             <div class="d-flex align-items-center demo-form">
               <input
                 type="email"
@@ -523,24 +530,29 @@
       </section>
 
       <section class="container">
-        <div class="blog-section section-container pe-0 text-white row">
-          <div class="d-flex pe-5">
+        <div class="blog-section section-container text-white row">
+          <div class="d-flex blog-section__text">
             <h2 class="text-hallelujah">From our CCTV Engineering blog</h2>
-            <button class="btn btn-primary rounded-pill ms-auto">
+            <button
+              class="btn btn-primary rounded-pill ms-auto d-lg-block d-none"
+            >
               See all articles
             </button>
           </div>
-          <div class="pe-1">
-            <h5 class="text-bold mb-3">
+          <div class="">
+            <h5 class="text-bold">
               Solar powered CCTV tower design - Part 1 - design considerations
             </h5>
-            <p class="mb-0">
+            <p class="">
               In the previous post, we did some calculations to work out how
               much power we needed to run our CCTV tower all year round. In this
-              post, we are going to briefly discuss battery choices.<br />
-              Continue reading...
+              post, we are going to briefly discuss battery choices.
             </p>
+            <p>Continue reading...</p>
           </div>
+          <button class="btn btn-primary rounded-pill d-lg-none d-block col-8">
+            See all articles
+          </button>
         </div>
       </section>
 
