@@ -1002,9 +1002,37 @@ $nav-link-color: $dark;
 .blog {
   .first-section {
     margin-bottom: 97px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 68px;
+    }
     .first-section_title {
       margin-bottom: 42px;
       font-weight: 600;
+      @include media-breakpoint-down(md) {
+        font-size: 42px;
+        margin-bottom: 23px;
+      }
+    }
+    .first-section_subTitle {
+      @include media-breakpoint-down(md) {
+        br {
+          display: none;
+        }
+        font-size: 21px;
+      }
+    }
+  }
+  .card-container {
+    .card-content-container {
+      @include media-breakpoint-down(md) {
+        margin-bottom: 65px;
+      }
+      .card-content-container_title {
+        @include media-breakpoint-down(md) {
+          font-size: 32px;
+          line-height: 48px;
+        }
+      }
     }
   }
   .cards-columns-container {
@@ -1019,18 +1047,31 @@ $nav-link-color: $dark;
 .one-blog {
   .first-section_backTo {
     font-weight: 600;
-    margin-bottom: 38px;
   }
   .first-section_title {
+    margin-top: 38px;
     margin-bottom: 42px;
     font-weight: 600;
+    @include media-breakpoint-down(md) {
+      margin-top: 44px;
+      font-size: 32px;
+      line-height: 48px;
+      margin-bottom: 27px;
+    }
   }
   .first-section_date {
     font-weight: 600;
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+    }
   }
   .first-section_image {
     margin-top: 67px;
     margin-bottom: 38px;
+    @include media-breakpoint-down(md) {
+      margin-top: 47px;
+      margin-bottom: 30px;
+    }
   }
 }
 
