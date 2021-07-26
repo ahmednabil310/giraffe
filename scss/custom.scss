@@ -1460,6 +1460,11 @@ $nav-link-color: $dark;
 .history-section {
   padding-top: 5.125rem;
   padding-bottom: 10.375rem;
+  .timeline-title {
+    color: #d99f23;
+    margin-bottom: 51px;
+    font-size: 36px;
+  }
   .history-timeline {
     h2 {
       font-size: 2.25rem;
@@ -1497,14 +1502,16 @@ $nav-link-color: $dark;
   }
 
   .history-section__text {
-    padding-right: 17%;
     h2 {
       margin-bottom: 1.875rem;
     }
     p {
       margin-bottom: 2.25rem;
     }
-    margin-bottom: 1.938rem;
+    margin-top: 142px;
+  }
+  .car-image {
+    margin-top: 67px;
   }
 }
 
@@ -1521,6 +1528,7 @@ $nav-link-color: $dark;
   }
   p {
     margin-bottom: 2.625rem;
+    color: rgba(255, 255, 255, 0.6);
   }
 }
 
@@ -1561,3 +1569,21 @@ $nav-link-color: $dark;
 }
 
 // Footer
+
+// About Us
+
+.about-us {
+  .who-section__headers {
+    h1 {
+      font-size: 52px;
+      font-weight: 600;
+      line-height: 67px;
+    }
+  }
+  button {
+    background-color: $primary;
+    color: black;
+  }
+}
+
+// About Us
