@@ -46,20 +46,21 @@ if (openDropDown === true) {
 }
 
 arrowDown.addEventListener("click", function () {
-  openDropDown = !openDropDown;
-  console.log(openDropDown);
-  if (openDropDown === true) {
-    arrowDown.style.display = "none";
-    arrowUp.style.display = "block";
-    dropdown.classList.toggle("show");
-    dropdownMenu.classList.toggle("show");
-  }
+  console.log(arrowDown);
+  arrowDown.classList.toggle("rotate");
+  dropdown.classList.toggle("show");
+  dropdownMenu.classList.toggle("show");
+  console.log("arrow down");
+  console.log(dropdown.classList);
 });
 
 arrowUp.addEventListener("click", function () {
-  openDropDown = !openDropDown;
-  if (openDropDown !== true) {
-    arrowUp.style.display = "none";
-    arrowDown.style.display = "block";
-  }
+  console.log(arrowDown);
+  arrowDown.classList.toggle("rotate");
+  arrowUp.classList.toggle = "d-none";
+  arrowDown.classList.toggle = "d-none";
+  dropdown.classList.toggle("show");
+  dropdown.classList.toggle("show");
+  console.log("arrow up");
+  console.log(dropdown.classList);
 });

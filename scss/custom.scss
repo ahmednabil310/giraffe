@@ -83,6 +83,12 @@ $nav-link-color: $dark;
   color: #d99f23 !important;
 }
 
+.rotate {
+  img {
+    transform: rotate(180deg);
+  }
+}
+
 .demo-form {
   input {
     max-width: 404px;
