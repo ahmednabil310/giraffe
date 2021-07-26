@@ -597,9 +597,19 @@ $nav-link-color: $dark;
 
 // Home Page
 
+// Hardware Page
 .hardware-page {
   .first-section {
     padding-bottom: 0.8125rem;
+    h3 {
+      color: #d99f23 !important;
+      @include media-breakpoint-down(lg) {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 40px;
+        margin-top: 47px;
+      }
+    }
     @include media-breakpoint-down(lg) {
       padding-bottom: 60px;
     }
@@ -656,11 +666,13 @@ $nav-link-color: $dark;
         }
         p {
           margin-bottom: 36px;
+          color: rgba(255, 255, 255, 0.8);
         }
         .second-section__text__bottom {
           margin-top: 5px;
           margin-bottom: 0;
           p {
+            color: white;
             margin-bottom: 0;
             &:first-child {
               margin-bottom: 36px;
@@ -722,6 +734,7 @@ $nav-link-color: $dark;
       h2 {
         font-size: 28px;
         line-height: 43px;
+        font-weight: 400;
       }
     }
     .fourth-section__list {
@@ -754,9 +767,13 @@ $nav-link-color: $dark;
       padding-top: 66px;
       padding-bottom: 64px;
     }
+    h2 {
+      font-size: 32px;
+    }
+
     .fifth-section__text {
       & > * {
-        margin-bottom: 2.125rem;
+        margin-bottom: 28px;
       }
       button {
         margin-top: 0.75rem;
@@ -792,6 +809,9 @@ $nav-link-color: $dark;
       padding-left: 3.625rem;
       & > * {
         margin-bottom: 2.125rem;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.8);
       }
       @include media-breakpoint-down(lg) {
         order: -1;
@@ -860,6 +880,8 @@ $nav-link-color: $dark;
     }
   }
 }
+
+// Hardware Page
 
 .software-page {
   .first-three-sections {
@@ -1150,7 +1172,7 @@ $nav-link-color: $dark;
 // What Makes us Different
 .different-page {
   .first-section {
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       padding: 0 24px;
       align-items: flex-start !important;
     }
@@ -1158,7 +1180,7 @@ $nav-link-color: $dark;
       margin-bottom: 12px;
       font-weight: 600;
       color: #000000;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(xl) {
         font-size: 42px;
         line-height: 56px;
       }
@@ -1166,7 +1188,7 @@ $nav-link-color: $dark;
     .first-section_talk {
       font-size: 24px;
       color: #d99f23;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(xl) {
         font-size: 20px;
         line-height: 39.65px;
       }
@@ -1178,25 +1200,25 @@ $nav-link-color: $dark;
     background-repeat: no-repeat;
     background-color: #f7d215;
     padding: 170px 0px 319px;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       padding: 40px 0px 153px;
     }
     .second-section-container {
       padding: 0 274px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(xl) {
         padding: 0px 28px;
       }
     }
     .second-section-card {
       margin-bottom: 174px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(xl) {
         margin-bottom: 85px;
       }
 
       .second-section_cardTitle {
         font-size: 36px;
         margin-bottom: 28px;
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
           font-size: 28px;
           line-height: 43px;
           margin-bottom: 24px;
@@ -1204,7 +1226,7 @@ $nav-link-color: $dark;
       }
       .second-section_cardTalk {
         margin-bottom: 64px;
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
           br {
             display: none;
           }
@@ -1215,19 +1237,19 @@ $nav-link-color: $dark;
       }
       .second-section_cardContent-cons {
         margin-right: 15px;
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
           margin-right: 0px;
           margin-bottom: 0px;
         }
       }
       .cons-container {
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
           margin-bottom: 34px;
         }
       }
       .second-section_cardContent-pros {
         margin-left: 15px;
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
           margin-left: 0px;
         }
       }
@@ -1237,13 +1259,13 @@ $nav-link-color: $dark;
         border-radius: 22px;
         padding: 44px 56px 92px;
         height: 100%;
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
           padding: 30px 36px 56px;
         }
 
         .second-section_cardContent-settingsIcon {
           margin-bottom: 36px;
-          @include media-breakpoint-down(lg) {
+          @include media-breakpoint-down(xl) {
             margin-bottom: 18px;
           }
         }
@@ -1252,14 +1274,14 @@ $nav-link-color: $dark;
           font-size: 20px;
           font-weight: 600;
           color: #000000;
-          @include media-breakpoint-down(lg) {
+          @include media-breakpoint-down(xl) {
             font-size: 15px;
             margin-bottom: 37.85px;
           }
         }
         .second-section_cardContent-common {
           margin-bottom: 42px;
-          @include media-breakpoint-down(lg) {
+          @include media-breakpoint-down(xl) {
             margin-bottom: 32px;
           }
           .second-section_cardContent-common_img {
@@ -1270,7 +1292,7 @@ $nav-link-color: $dark;
             font-weight: 500;
             color: #333333;
             line-height: 22px;
-            @include media-breakpoint-down(lg) {
+            @include media-breakpoint-down(xl) {
               font-size: 12px;
               line-height: 18px;
               br {
@@ -1285,12 +1307,12 @@ $nav-link-color: $dark;
 
   .third-section-form-container {
     padding: 105px 100px 68px 0px;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       padding: 28px 24px 76px;
     }
     input {
       max-width: 404px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(xl) {
         max-width: 100%;
       }
     }
@@ -1318,7 +1340,7 @@ $nav-link-color: $dark;
     .form-button {
       width: 193px;
       height: 44px;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(xl) {
         float: none !important;
 
         margin-top: 20px;
@@ -1343,19 +1365,19 @@ $nav-link-color: $dark;
 .blog {
   .first-section {
     margin-bottom: 97px;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       margin-bottom: 68px;
     }
     .first-section_title {
       margin-bottom: 42px;
       font-weight: 600;
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(xl) {
         font-size: 42px;
         margin-bottom: 23px;
       }
     }
     .first-section_subTitle {
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(xl) {
         br {
           display: none;
         }
@@ -1365,11 +1387,11 @@ $nav-link-color: $dark;
   }
   .card-container {
     .card-content-container {
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(xl) {
         margin-bottom: 65px;
       }
       .card-content-container_title {
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
           font-size: 32px;
           line-height: 48px;
         }
@@ -1393,7 +1415,7 @@ $nav-link-color: $dark;
     margin-top: 38px;
     margin-bottom: 42px;
     font-weight: 600;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       margin-top: 44px;
       font-size: 32px;
       line-height: 48px;
@@ -1402,14 +1424,14 @@ $nav-link-color: $dark;
   }
   .first-section_date {
     font-weight: 600;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       font-size: 14px;
     }
   }
   .first-section_image {
     margin-top: 67px;
     margin-bottom: 38px;
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
       margin-top: 47px;
       margin-bottom: 30px;
     }
