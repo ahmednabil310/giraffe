@@ -27,6 +27,9 @@ $container-padding-x: 0;
 $navbar-light-toggler-border-color: transparent;
 $navbar-toggler-focus-width: 0;
 
+$dropdown-border-radius: 0;
+$dropdown-border-width: 3;
+
 $btn-padding-y: 0.563rem;
 $btn-padding-x: 2.3125rem;
 $btn-font-weight: 500;
@@ -124,7 +127,31 @@ $nav-link-color: $dark;
   @media screen and (max-width: 1200px) {
     margin-bottom: 57px;
   }
+  .navbar-collapse {
+    @media screen and (max-width: 1200px) {
+      margin-top: 81px;
+    }
+  }
   .navbar-nav {
+    .dropdown-toggle::after {
+      border: 0;
+    }
+    .dropdown-menu {
+      border-left: 3px solid $primary;
+      box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
+      @media screen and (max-width: 1200px) {
+        border-left: none;
+        background-color: transparent;
+        box-shadow: unset;
+      }
+      a {
+        @media screen and (max-width: 1200px) {
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 30px;
+        }
+      }
+    }
     .nav-link {
       font-size: 16px;
       font-weight: 400;
@@ -132,6 +159,15 @@ $nav-link-color: $dark;
       margin-right: 48px;
       padding: 0;
       position: relative;
+      @media screen and (max-width: 1200px) {
+        font-size: 25px;
+        line-height: 37.5px;
+      }
+    }
+    .nav-item {
+      @media screen and (max-width: 1200px) {
+        margin-bottom: 34px !important;
+      }
     }
     .active {
       font-weight: 500;
@@ -155,7 +191,7 @@ $nav-link-color: $dark;
 }
 @media screen and (max-width: 1200px) {
   .navbar .navbar-nav .active:before {
-    left: 3%;
+    left: 54px;
   }
 }
 // NavBar
@@ -1566,6 +1602,11 @@ $nav-link-color: $dark;
 .history-section {
   padding-top: 5.125rem;
   padding-bottom: 10.375rem;
+  .timeline-title {
+    color: #d99f23;
+    margin-bottom: 51px;
+    font-size: 36px;
+  }
   .history-timeline {
     h2 {
       font-size: 2.25rem;
@@ -1603,14 +1644,16 @@ $nav-link-color: $dark;
   }
 
   .history-section__text {
-    padding-right: 17%;
     h2 {
       margin-bottom: 1.875rem;
     }
     p {
       margin-bottom: 2.25rem;
     }
-    margin-bottom: 1.938rem;
+    margin-top: 142px;
+  }
+  .car-image {
+    margin-top: 67px;
   }
 }
 
@@ -1627,6 +1670,7 @@ $nav-link-color: $dark;
   }
   p {
     margin-bottom: 2.625rem;
+    color: rgba(255, 255, 255, 0.6);
   }
 }
 
@@ -1667,3 +1711,21 @@ $nav-link-color: $dark;
 }
 
 // Footer
+
+// About Us
+
+.about-us {
+  .who-section__headers {
+    h1 {
+      font-size: 52px;
+      font-weight: 600;
+      line-height: 67px;
+    }
+  }
+  button {
+    background-color: $primary;
+    color: black;
+  }
+}
+
+// About Us
