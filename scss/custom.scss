@@ -1558,6 +1558,10 @@ $nav-link-color: $dark;
     }
   }
   .card-container {
+    .card-content-link-container {
+      text-decoration: none;
+      color: #333;
+    }
     .card-content-container {
       @include media-breakpoint-down(xl) {
         margin-bottom: 65px;
