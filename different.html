@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-light pt-0">
+    <nav class="navbar navbar-expand-xl navbar-light pt-0">
       <div
         class="
           container
@@ -33,7 +33,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse flex-lg-grow-0"
+          class="collapse navbar-collapse flex-xl-grow-0"
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav">
@@ -100,11 +100,11 @@
             align-items-center
           "
         >
-          <h1 class="text-start text-lg-center first-section_title">
+          <h1 class="text-start text-xl-center first-section_title">
             What makes Giraffe different?
           </h1>
           <p
-            class="text-start text-lg-center first-section_talk text-hallelujah"
+            class="text-start text-xl-center first-section_talk text-hallelujah"
           >
             Because it is simple better by design.
           </p>
@@ -159,7 +159,7 @@
               and use of CCTV; simpler for both end user and installer
             </p>
             <div class="row">
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-xl-6 cons-container">
                 <div
                   class="
                     second-section_cardContent second-section_cardContent-cons
@@ -282,7 +282,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-xl-6">
                 <div
                   class="
                     second-section_cardContent second-section_cardContent-pros
@@ -431,7 +431,7 @@
               not set up correctly
             </p>
             <div class="row">
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-xl-6 cons-container">
                 <div
                   class="
                     second-section_cardContent second-section_cardContent-cons
@@ -575,7 +575,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-xl-6">
                 <div
                   class="
                     second-section_cardContent second-section_cardContent-pros
@@ -749,7 +749,7 @@
               or the system administrator
             </p>
             <div class="row">
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-xl-6 cons-container">
                 <div
                   class="
                     second-section_cardContent second-section_cardContent-cons
@@ -914,7 +914,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-xl-6">
                 <div
                   class="
                     second-section_cardContent second-section_cardContent-pros
@@ -1111,7 +1111,7 @@
               market
             </p>
             <div class="row">
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-xl-6 cons-container">
                 <div
                   class="
                     second-section_cardContent second-section_cardContent-cons
@@ -1277,7 +1277,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-xl-6">
                 <div
                   class="
                     second-section_cardContent second-section_cardContent-pros
@@ -1432,8 +1432,8 @@
 
       <section class="container-fluid p-0">
         <div class="third-section">
-          <div class="row">
-            <div class="col-12 col-lg-5">
+          <div class="row mx-0">
+            <div class="col-12 col-xl-5 px-0">
               <div class="third-section-image-container">
                 <img
                   class="img-fluid d-none d-xl-block"
@@ -1447,8 +1447,9 @@
                 />
               </div>
             </div>
-            <div class="col-12 col-lg-7 p-0">
-              <form class="third-section-form-container">
+            <div class="col-12 col-xl-7 p-0">
+              <!-- Form Desktop -->
+              <form class="third-section-form-container d-none d-xl-block">
                 <div class="mb-4">
                   <div class="row gx-5">
                     <div class="col-12 col-xl-6 mb-4 mb-xl-0">
@@ -1563,7 +1564,7 @@ Your Message</textarea
                     d-flex
                     justify-content-center
                     align-items-center
-                    d-lg-block
+                    d-xl-block
                   "
                 >
                   <button
@@ -1580,6 +1581,144 @@ Your Message</textarea
                   </button>
                 </div>
               </form>
+              <!-- Form Desktop -->
+
+              <!-- Form Mobile -->
+
+              <form class="third-section-form-container d-block d-xl-none">
+                <div class="mb-4">
+                  <div class="row gx-5">
+                    <div class="col-12 col-xl-6 mb-4 mb-xl-0">
+                      <label for="name" class="form-label">Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Your Name"
+                      />
+                    </div>
+                    <div class="col-12 col-xl-6">
+                      <label for="phone" class="form-label">Phone</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        placeholder="Your Phone Number"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <div class="row gx-5">
+                    <div class="col-12 col-xl-6 mb-4 mb-xl-0">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="email"
+                        placeholder="Your Work Email"
+                      />
+                    </div>
+                    <div class="col-12 col-xl-6">
+                      <label for="user" class="form-label">I am</label>
+                      <input type="password" class="form-control" id="user" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <div class="row gx-5">
+                    <div class="col-12 col-xl-6">
+                      <label for="phone" class="form-label"
+                        >Preferred Contact Method</label
+                      >
+                      <div
+                        class="
+                          d-flex
+                          align-items-center
+                          radio-buttons-container
+                        "
+                      >
+                        <div class="form-check me-3 d-flex">
+                          <input
+                            class="form-check-input me-2"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="phone-me"
+                          />
+                          <label
+                            class="form-check-label align-self-center"
+                            for="phone-me"
+                          >
+                            Phone Me
+                          </label>
+                        </div>
+                        <div class="form-check d-flex">
+                          <input
+                            class="form-check-input me-2"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="email-me"
+                          />
+                          <label
+                            class="form-check-label align-self-center"
+                            for="email-me"
+                          >
+                            Email Me
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label for="message" class="form-label">Message*</label>
+                  <textarea class="form-control" id="message" rows="7">
+Your Message</textarea
+                  >
+                </div>
+
+                <div class="form-check inline-checkbox mb-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="inlineCheckbox1"
+                    value="option1"
+                  />
+                  <label
+                    class="form-check-label fs-6 fw-normal text-dark"
+                    for="inlineCheckbox1"
+                    >Difficult to integrate other systems - often ends with
+                    different<br />
+                    apps for different components
+                  </label>
+                </div>
+                <div
+                  class="
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                    d-xl-block
+                  "
+                >
+                  <button
+                    class="
+                      btn btn-primary
+                      round-bill
+                      text-uppercase
+                      form-button
+                      float-end
+                      p-0
+                    "
+                  >
+                    send message
+                  </button>
+                </div>
+              </form>
+
+              <!-- Form Mobile -->
             </div>
           </div>
         </div>
@@ -1678,7 +1817,7 @@ Your Message</textarea
 
           <div class="footer-upper_second">
             <div class="row">
-              <div class="col-lg-3 col-12 d-flex flex-column">
+              <div class="col-xl-3 col-12 d-flex flex-column">
                 <a href="#" class="footer-pages-link-bold mb-4">
                   Our Products
                 </a>
@@ -1696,7 +1835,7 @@ Your Message</textarea
                 </a>
               </div>
 
-              <div class="col-lg-3 col-12 d-flex flex-column">
+              <div class="col-xl-3 col-12 d-flex flex-column">
                 <a href="#" class="footer-pages-link-bold mb-4">
                   About Giraffe
                 </a>
@@ -1707,7 +1846,7 @@ Your Message</textarea
                 </a>
               </div>
 
-              <div class="col-lg-3 col-12 d-flex flex-column">
+              <div class="col-xl-3 col-12 d-flex flex-column">
                 <a href="#" class="footer-pages-link-bold mb-4"> Help </a>
                 <a href="#" class="footer-pages-link-light mb-3">
                   FAQs & Help Center

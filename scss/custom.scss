@@ -1,14 +1,14 @@
 // Custom variables
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 $font-size-base: 1rem;
-$font-family-sans-serif: "Poppins", -apple-system, BlinkMacSystemFont,
-  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif: 'Poppins', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-$font-family-hallelujah: "Gloria Hallelujah", "cursive";
+$font-family-hallelujah: 'Gloria Hallelujah', 'cursive';
 $h1-font-size: $font-size-base * 3.25;
 $headings-font-family: $font-family-sans-serif;
 $primary: #f6d215;
@@ -47,22 +47,22 @@ $input-box-shadow: null;
 $input-placeholder-color: rgba(51, 51, 51, 0.3);
 
 // import bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/utilities";
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/utilities';
 
 // 2. Include any default variable overrides here
 $nav-link-padding-y: 12px;
 $nav-link-color: $dark;
 
 // 3. Include remainder of required Bootstrap stylesheets
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
 
 // 4. Include any optional Bootstrap components as you like
-@import "../node_modules/bootstrap/scss/nav";
+@import '../node_modules/bootstrap/scss/nav';
 
 // 5. Add additional custom code here
 .container body {
@@ -121,6 +121,9 @@ $nav-link-color: $dark;
   margin-top: 24px;
   font-family: Poppins;
   margin-bottom: 165px;
+  @media screen and (max-width: 1200px) {
+    margin-bottom: 57px;
+  }
   .navbar-nav {
     .nav-link {
       font-size: 16px;
@@ -134,7 +137,7 @@ $nav-link-color: $dark;
       font-weight: 500;
     }
     .active:before {
-      content: "";
+      content: '';
       display: block;
       position: absolute;
       width: 36px;
@@ -158,7 +161,7 @@ $nav-link-color: $dark;
 // NavBar
 
 .just-show-me-demo-section {
-  background-image: url("../assets/images/home/bg-ten.png");
+  background-image: url('../assets/images/home/bg-ten.png');
   padding-top: 29px;
   padding-bottom: 77px;
   @include media-breakpoint-down(lg) {
@@ -183,7 +186,9 @@ $nav-link-color: $dark;
   padding-top: 2.5rem;
   .blog-section__text {
     margin-bottom: 3.1875rem;
-
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 41px;
+    }
     h2 {
       @include media-breakpoint-down(lg) {
         font-size: 36px;
@@ -193,11 +198,17 @@ $nav-link-color: $dark;
   }
   h5 {
     margin-bottom: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 29px;
+    }
   }
 
   p {
     @include media-breakpoint-down(lg) {
       margin-bottom: 20px;
+      line-height: 27px;
     }
   }
   button {
@@ -222,6 +233,8 @@ $nav-link-color: $dark;
         margin-bottom: 42px;
         @include media-breakpoint-down(lg) {
           margin-bottom: 23px;
+          font-size: 42px;
+          line-height: 56px;
         }
       }
     }
@@ -239,13 +252,24 @@ $nav-link-color: $dark;
   .second-section {
     padding-top: 69px;
     padding-bottom: 90px;
+    @include media-breakpoint-down(lg) {
+      padding-bottom: 63px;
+    }
     .second-sction--right {
       font-size: 18px;
+      font-weight: 500;
+      li {
+        font-weight: 600;
+      }
+      @include media-breakpoint-down(lg) {
+        margin-top: 49px;
+        font-size: 14px;
+      }
     }
   }
 
   .third-section {
-    background-image: url("../assets/images/home/second-bg.png");
+    background-image: url('../assets/images/home/second-bg.png');
     padding-top: 29px;
     padding-bottom: 77px;
     @include media-breakpoint-down(lg) {
@@ -254,9 +278,11 @@ $nav-link-color: $dark;
     }
     h3 {
       margin-bottom: 1.875rem;
+      font-weight: 400;
       @include media-breakpoint-down(lg) {
         font-size: 28px;
-        margin-bottom: 52px;
+        margin-bottom: 43px;
+        line-height: 43px;
       }
     }
   }
@@ -287,25 +313,30 @@ $nav-link-color: $dark;
         padding-left: 0;
         h2 {
           font-size: 28px;
+          line-height: 42px;
+          margin-bottom: 28px;
         }
         ul {
           font-size: 14px;
         }
         p {
           font-size: 14px;
+          line-height: 21px;
         }
       }
       & > * {
         margin-bottom: 36px;
       }
       ul {
-        line-height: 2.25;
+        line-height: 36px;
       }
       .foruth-section__text__first {
         font-size: 1.125rem;
         line-height: 33px;
         @include media-breakpoint-down(lg) {
-          font-size: 14px;
+          font-size: 16px;
+          line-height: 33px;
+          margin-bottom: 25px;
         }
       }
     }
@@ -317,13 +348,36 @@ $nav-link-color: $dark;
     background-size: contain;
     background-position: right bottom;
     background-repeat: no-repeat;
+    @include media-breakpoint-down(lg) {
+      padding-top: 45px;
+    }
     .fifth-section__text {
       & > * {
         margin-bottom: 41px;
       }
+      h2 {
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 50px;
+          font-size: 28px;
+          line-height: 45px;
+        }
+      }
       p {
         font-size: 18px;
         padding-right: 5%;
+        @include media-breakpoint-down(lg) {
+          font-size: 16px;
+          line-height: 24px;
+          padding-right: 0;
+        }
+      }
+    }
+    button {
+      @include media-breakpoint-down(lg) {
+        padding: 0;
+        width: 177px;
+        height: 44px;
+        margin-top: 15px;
       }
     }
     .fifth-section__img {
@@ -345,10 +399,12 @@ $nav-link-color: $dark;
           margin-top: 71px;
           margin-bottom: 37px;
           font-weight: bold;
+          color: #000000;
           @include media-breakpoint-down(lg) {
             font-size: 28px;
-            margin-top: 36px;
+            margin-top: 39px;
             margin-bottom: 18px;
+            line-height: 42px;
           }
         }
       }
@@ -382,7 +438,8 @@ $nav-link-color: $dark;
         font-size: 16px;
         h3 {
           font-size: 28px;
-          margin-bottom: 65px;
+          margin-bottom: 51px;
+          line-height: 45px;
         }
       }
     }
@@ -395,12 +452,13 @@ $nav-link-color: $dark;
     padding-top: 3.5rem;
     padding-bottom: 4.0625rem;
     @include media-breakpoint-down(lg) {
-      padding-top: 48px;
+      padding-top: 84px;
       padding-bottom: 91px;
     }
     h3 {
       margin-bottom: 19px;
       line-height: 45px;
+      -webkit-text-stroke: 0.8px black;
       @include media-breakpoint-down(lg) {
         font-size: 28px;
         margin-bottom: 25px;
@@ -408,7 +466,7 @@ $nav-link-color: $dark;
     }
     h4 {
       margin-bottom: 3.5rem;
-      line-height: 48px;
+      line-height: 47.58px;
       @include media-breakpoint-down(lg) {
         font-size: 24px;
         margin-bottom: 51px;
@@ -421,11 +479,14 @@ $nav-link-color: $dark;
     background-size: auto auto;
     background-repeat: no-repeat;
     background-position: top right;
+    @include media-breakpoint-down(lg) {
+      padding-bottom: 123px;
+    }
     .nineth-section__list {
       margin-top: 7.875rem;
       @include media-breakpoint-down(lg) {
         order: 2;
-        margin-top: 0;
+        margin-top: 60px;
       }
       .nineth-section__list__text {
         margin-left: 1.25rem;
@@ -454,7 +515,7 @@ $nav-link-color: $dark;
       .nineth-section-img-ph {
         margin-bottom: 5.625rem;
         width: 40%;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           margin-bottom: 0;
           width: 100%;
         }
@@ -465,7 +526,7 @@ $nav-link-color: $dark;
         right: 0;
         max-height: 100%;
         width: 41.5%;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           width: 87%;
         }
       }
@@ -500,7 +561,7 @@ $nav-link-color: $dark;
             margin-bottom: 52px;
           }
         }
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           h2 {
             font-size: 28px;
           }
@@ -619,7 +680,7 @@ $nav-link-color: $dark;
         bottom: 0;
         width: 70%;
       }
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         width: 91%;
       }
     }
@@ -1089,7 +1150,7 @@ $nav-link-color: $dark;
 // What Makes us Different
 .different-page {
   .first-section {
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding: 0 24px;
       align-items: flex-start !important;
     }
@@ -1097,7 +1158,7 @@ $nav-link-color: $dark;
       margin-bottom: 12px;
       font-weight: 600;
       color: #000000;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         font-size: 42px;
         line-height: 56px;
       }
@@ -1105,7 +1166,7 @@ $nav-link-color: $dark;
     .first-section_talk {
       font-size: 24px;
       color: #d99f23;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         font-size: 20px;
         line-height: 39.65px;
       }
@@ -1117,25 +1178,25 @@ $nav-link-color: $dark;
     background-repeat: no-repeat;
     background-color: #f7d215;
     padding: 170px 0px 319px;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding: 40px 0px 153px;
     }
     .second-section-container {
       padding: 0 274px;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         padding: 0px 28px;
       }
     }
     .second-section-card {
       margin-bottom: 174px;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         margin-bottom: 85px;
       }
 
       .second-section_cardTitle {
         font-size: 36px;
         margin-bottom: 28px;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           font-size: 28px;
           line-height: 43px;
           margin-bottom: 24px;
@@ -1143,7 +1204,7 @@ $nav-link-color: $dark;
       }
       .second-section_cardTalk {
         margin-bottom: 64px;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           br {
             display: none;
           }
@@ -1154,40 +1215,35 @@ $nav-link-color: $dark;
       }
       .second-section_cardContent-cons {
         margin-right: 15px;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           margin-right: 0px;
+          margin-bottom: 0px;
+        }
+      }
+      .cons-container {
+        @include media-breakpoint-down(lg) {
           margin-bottom: 34px;
         }
       }
       .second-section_cardContent-pros {
         margin-left: 15px;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           margin-left: 0px;
         }
       }
-      .first-card-height {
-        height: 881px;
-      }
-      .second-card-height {
-        height: 1027px;
-      }
-      .third-card-height {
-        height: 1173px;
-      }
-      .fourth-card-height {
-        height: 1129px;
-      }
+
       .second-section_cardContent {
         background-color: white;
         border-radius: 22px;
         padding: 44px 56px 92px;
-        @include media-breakpoint-down(md) {
+        height: 100%;
+        @include media-breakpoint-down(lg) {
           padding: 30px 36px 56px;
         }
 
         .second-section_cardContent-settingsIcon {
           margin-bottom: 36px;
-          @include media-breakpoint-down(md) {
+          @include media-breakpoint-down(lg) {
             margin-bottom: 18px;
           }
         }
@@ -1196,14 +1252,14 @@ $nav-link-color: $dark;
           font-size: 20px;
           font-weight: 600;
           color: #000000;
-          @include media-breakpoint-down(md) {
+          @include media-breakpoint-down(lg) {
             font-size: 15px;
             margin-bottom: 37.85px;
           }
         }
         .second-section_cardContent-common {
           margin-bottom: 42px;
-          @include media-breakpoint-down(md) {
+          @include media-breakpoint-down(lg) {
             margin-bottom: 32px;
           }
           .second-section_cardContent-common_img {
@@ -1214,7 +1270,7 @@ $nav-link-color: $dark;
             font-weight: 500;
             color: #333333;
             line-height: 22px;
-            @include media-breakpoint-down(md) {
+            @include media-breakpoint-down(lg) {
               font-size: 12px;
               line-height: 18px;
               br {
@@ -1229,12 +1285,12 @@ $nav-link-color: $dark;
 
   .third-section-form-container {
     padding: 105px 100px 68px 0px;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       padding: 28px 24px 76px;
     }
     input {
       max-width: 404px;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         max-width: 100%;
       }
     }
@@ -1262,7 +1318,7 @@ $nav-link-color: $dark;
     .form-button {
       width: 193px;
       height: 44px;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         float: none !important;
 
         margin-top: 20px;
@@ -1287,19 +1343,19 @@ $nav-link-color: $dark;
 .blog {
   .first-section {
     margin-bottom: 97px;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       margin-bottom: 68px;
     }
     .first-section_title {
       margin-bottom: 42px;
       font-weight: 600;
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         font-size: 42px;
         margin-bottom: 23px;
       }
     }
     .first-section_subTitle {
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         br {
           display: none;
         }
@@ -1309,11 +1365,11 @@ $nav-link-color: $dark;
   }
   .card-container {
     .card-content-container {
-      @include media-breakpoint-down(md) {
+      @include media-breakpoint-down(lg) {
         margin-bottom: 65px;
       }
       .card-content-container_title {
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(lg) {
           font-size: 32px;
           line-height: 48px;
         }
@@ -1337,7 +1393,7 @@ $nav-link-color: $dark;
     margin-top: 38px;
     margin-bottom: 42px;
     font-weight: 600;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       margin-top: 44px;
       font-size: 32px;
       line-height: 48px;
@@ -1346,14 +1402,14 @@ $nav-link-color: $dark;
   }
   .first-section_date {
     font-weight: 600;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       font-size: 14px;
     }
   }
   .first-section_image {
     margin-top: 67px;
     margin-bottom: 38px;
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       margin-top: 47px;
       margin-bottom: 30px;
     }
@@ -1397,7 +1453,7 @@ $nav-link-color: $dark;
         display: flex;
         align-items: center;
         &::before {
-          content: "";
+          content: '';
           display: inline-block;
           background-image: url(../assets/images/about-us/list-style-type.png);
           height: 5px;
