@@ -127,10 +127,30 @@ $nav-link-color: $dark;
   @media screen and (max-width: 1200px) {
     margin-bottom: 57px;
   }
+  .navbar-collapse {
+    @media screen and (max-width: 1200px) {
+      margin-top: 81px;
+    }
+  }
   .navbar-nav {
+    .dropdown-toggle::after {
+      border: 0;
+    }
     .dropdown-menu {
       border-left: 3px solid $primary;
       box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
+      @media screen and (max-width: 1200px) {
+        border-left: none;
+        background-color: transparent;
+        box-shadow: unset;
+      }
+      a {
+        @media screen and (max-width: 1200px) {
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 30px;
+        }
+      }
     }
     .nav-link {
       font-size: 16px;
@@ -139,6 +159,15 @@ $nav-link-color: $dark;
       margin-right: 48px;
       padding: 0;
       position: relative;
+      @media screen and (max-width: 1200px) {
+        font-size: 25px;
+        line-height: 37.5px;
+      }
+    }
+    .nav-item {
+      @media screen and (max-width: 1200px) {
+        margin-bottom: 34px !important;
+      }
     }
     .active {
       font-weight: 500;
@@ -162,7 +191,7 @@ $nav-link-color: $dark;
 }
 @media screen and (max-width: 1200px) {
   .navbar .navbar-nav .active:before {
-    left: 28px;
+    left: 54px;
   }
 }
 // NavBar
