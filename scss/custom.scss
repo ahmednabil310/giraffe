@@ -79,6 +79,10 @@ $nav-link-color: $dark;
   font-weight: 600;
 }
 
+.text-primary {
+  color: black !important;
+}
+
 .demo-form {
   input {
     max-width: 404px;
@@ -279,6 +283,7 @@ $nav-link-color: $dark;
       right: 0;
       bottom: 0;
       width: 60%;
+      max-width: 960px;
       @include media-breakpoint-down(lg) {
         width: 88%;
       }
