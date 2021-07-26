@@ -28,7 +28,7 @@
               alt="logo"
             />
             <button
-              class="navbar-toggler"
+              class="navbar-toggler p-0"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -36,7 +36,7 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <img src="./assets/images/toggle.png" alt="toggle-menu" />
             </button>
             <div
               class="collapse navbar-collapse flex-lg-grow-0"
@@ -51,7 +51,13 @@
 
                 <li class="nav-item dropdown mb-2 mb-xl-0">
                   <a
-                    class="nav-link dropdown-toggle d-flex align-items-center"
+                    class="
+                      nav-link
+                      dropdown-toggle
+                      d-flex
+                      align-items-center
+                      cursor-pointer
+                    "
                     href="#"
                     id="navbarDropdown"
                     role="button"
@@ -61,12 +67,12 @@
                     Product
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Software</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Hardware</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#">Comparison</a>
                     </li>
                   </ul>
                 </li>
@@ -665,7 +671,7 @@
         </div>
 
         <div class="footer-bottom-content d-flex justify-content-between">
-          <span class="footer-bottom-content-copyright"
+          <span class="footer-bottom-content-copyright align-self-baseline"
             >© Giraffe Co. 2021
           </span>
           <div class="footer-bottom-content-icons">
