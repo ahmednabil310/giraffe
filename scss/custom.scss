@@ -777,6 +777,9 @@ $nav-link-color: $dark;
       margin-top: 3.0625rem;
       div {
         margin-left: 1.4375rem;
+        & > :first-child {
+          margin-left: 0;
+        }
         @include media-breakpoint-down(lg) {
           margin-left: 0;
           margin-bottom: 28px;
