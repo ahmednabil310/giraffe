@@ -34,12 +34,13 @@ close.addEventListener('click', function () {
   }
 });
 
+//
 if (openDropDown === true) {
   arrowUp.style.display = 'none';
   arrowDown.style.display = 'block';
 } else {
-  arrowDown.style.display = 'none';
   arrowUp.style.display = 'block';
+  arrowDown.style.display = 'none';
 }
 
 arrowDown.addEventListener('click', function () {
@@ -48,8 +49,8 @@ arrowDown.addEventListener('click', function () {
   if (openDropDown === true) {
     arrowUp.style.display = 'none';
   } else {
-    arrowUp.style.display = 'block';
     arrowDown.style.display = 'none';
+    arrowUp.style.display = 'block';
   }
 });
 
@@ -59,7 +60,7 @@ arrowUp.addEventListener('click', function () {
     arrowUp.style.display = 'none';
     arrowDown.style.display = 'block';
   } else {
-    arrowUp.style.display = 'none';
-    arrowDown.style.display = 'block';
+    arrowDown.style.display = 'none';
+    arrowUp.style.display = 'block';
   }
 });

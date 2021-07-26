@@ -22,11 +22,13 @@
               justify-content-between
             "
           >
-            <img
-              class="mb-xl-0"
-              src="./assets/images/Giraffe_logo.png"
-              alt="logo"
-            />
+            <a href="index.html">
+              <img
+                class="mb-xl-0"
+                src="./assets/images/Giraffe_logo.png"
+                alt="logo"
+              />
+            </a>
             <button
               class="navbar-toggler p-0"
               type="button"
@@ -61,7 +63,7 @@
                   >
                 </li>
 
-                <li class="nav-item dropdown m-0">
+                <li class="nav-item dropdown m-0" id="arrow-down">
                   <a
                     class="
                       d-flex
@@ -80,14 +82,12 @@
                   >
                     Product
                     <img
-                      class="ms-2"
+                      class="ms-2 d-block d-xl-none"
                       src="./assets/images/arrow-down.png"
-                      id="arrow-down"
                     />
                     <img
-                      class="ms-2"
-                      src="./assets/images/arrow-down.png"
-                      id="arrow-up"
+                      class="ms-2 d-none d-xl-block"
+                      src="./assets/images/arrow-down-desktop.png"
                     />
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -102,6 +102,41 @@
                     </li>
                   </ul>
                 </li>
+
+                <li class="nav-item dropdown m-0 dropdown-up" id="arrow-up">
+                  <a
+                    class="
+                      d-flex
+                      align-items-center
+                      nav-link
+                      dropdown-toggle
+                      d-flex
+                      align-items-center
+                      cursor-pointer
+                    "
+                    href="#"
+                    id="navbarDropdown2"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Product
+
+                    <img class="ms-2" src="./assets/images/arrow-up.png" />
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <li>
+                      <a class="dropdown-item" href="software.html">Software</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="hardware.html">Hardware</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Comparison</a>
+                    </li>
+                  </ul>
+                </li>
+
                 <li class="nav-item m-0">
                   <a class="nav-link" href="case-study.html">Case Studies</a>
                 </li>
