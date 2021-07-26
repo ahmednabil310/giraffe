@@ -80,7 +80,7 @@ $nav-link-color: $dark;
 }
 
 .text-primary {
-  color: black !important;
+  color: #d99f23 !important;
 }
 
 .demo-form {
@@ -1321,7 +1321,7 @@ $nav-link-color: $dark;
     @include media-breakpoint-down(md) {
       background-size: 74%;
       background-position: bottom -55px right;
-      padding-bottom: 351px;
+      padding-bottom: 0;
       padding-top: 54px;
     }
 
