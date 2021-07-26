@@ -728,7 +728,7 @@ $nav-link-color: $dark;
         bottom: 0;
         width: 70%;
       }
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         width: 91%;
       }
     }
@@ -976,6 +976,9 @@ $nav-link-color: $dark;
       max-height: 100%;
       z-index: 1;
       @include media-breakpoint-down(lg) {
+        width: 75%;
+      }
+      @include media-breakpoint-down(sm) {
         max-width: unset;
         width: 120%;
         bottom: -5%;
@@ -1046,7 +1049,7 @@ $nav-link-color: $dark;
     @include media-breakpoint-down(lg) {
       background-image: url(../assets/images/software/background-dots-5.png);
       background-size: auto;
-      padding-bottom: 19.2rem;
+      padding-bottom: 0;
     }
     .second-section__text {
       h2 {
@@ -1069,16 +1072,21 @@ $nav-link-color: $dark;
         }
       }
     }
-    .second-section__img img {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 57%;
-      @include media-breakpoint-down(lg) {
-        width: 100%;
-        top: unset;
-        bottom: -41px;
+    .second-section__img {
+      .second-section__img-ph {
+        position: static;
+      }
+      img {
+        position: absolute;
+        top: 0;
         right: 0;
+        width: 57%;
+        @include media-breakpoint-down(lg) {
+          width: 100%;
+          top: unset;
+          bottom: -41px;
+          right: 0;
+        }
       }
     }
   }
@@ -1171,7 +1179,9 @@ $nav-link-color: $dark;
             }
           }
           p {
-            height: 96px;
+            @include media-breakpoint-up(xl) {
+              height: 96px;
+            }
             @include media-breakpoint-down(lg) {
               height: unset;
               margin-top: 9px;
@@ -1289,13 +1299,18 @@ $nav-link-color: $dark;
   }
   .seventh-section {
     background-image: url(../assets/images/software/sw-bg-seven.png);
-    background-size: auto;
+    background-size: 39% auto;
     background-position-y: -217px;
     background-position-x: right;
     background-repeat: no-repeat;
     padding-top: 11.25rem;
     padding-bottom: 9.0625rem;
+
     @include media-breakpoint-down(lg) {
+      background-size: 68%;
+      background-position: bottom -55px right;
+    }
+    @include media-breakpoint-down(md) {
       background-size: 74%;
       background-position: bottom -55px right;
       padding-bottom: 351px;

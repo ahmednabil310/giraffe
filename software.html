@@ -11,7 +11,7 @@
   <body>
     <!-- NavBar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light pt-0">
+    <nav class="navbar mt-0 navbar-expand-xl navbar-light py-0">
       <div
         class="
           container
@@ -21,35 +21,53 @@
           justify-content-between
         "
       >
-        <img src="./assets/images/Giraffe_logo.png" alt="logo" />
+        <img
+          class="mb-xl-0"
+          src="./assets/images/Giraffe_logo.png"
+          alt="logo"
+        />
         <button
-          class="navbar-toggler"
+          class="navbar-toggler p-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style="width: 46px; height: 46px"
         >
-          <span class="navbar-toggler-icon"></span>
+          <img
+            class="img-fluid"
+            src="./assets/images/toggle.png "
+            alt="toggle-menu"
+            id="open-menu"
+          />
+          <img
+            class="img-fluid"
+            src="./assets/images/menu-close.png"
+            alt="menu-close"
+            id="close-menu"
+          />
         </button>
         <div
-          class="collapse navbar-collapse flex-lg-grow g-0-0"
+          class="collapse navbar-collapse flex-lg-grow-0"
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+            <li class="nav-item m-0">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
 
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown m-0">
               <a
                 class="
+                  d-flex
+                  align-items-center
                   nav-link
-                  active
                   dropdown-toggle
                   d-flex
                   align-items-center
+                  cursor-pointer
                 "
                 href="#"
                 id="navbarDropdown"
@@ -58,29 +76,58 @@
                 aria-expanded="false"
               >
                 Product
+                <img
+                  class="ms-2"
+                  src="./assets/images/arrow-down.png"
+                  id="arrow-down"
+                />
+                <img
+                  class="ms-2"
+                  src="./assets/images/arrow-down.png"
+                  id="arrow-up"
+                />
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Software</a></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Hardware</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Comparison</a>
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item m-0">
               <a class="nav-link" href="#">Case Studies</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item m-0">
               <a class="nav-link" href="#">Blog</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item m-0">
               <a class="nav-link" href="#">About Us</a>
             </li>
           </ul>
+          <button
+            class="
+              btn btn-primary
+              rounded-pill
+              login-button
+              text-uppercase
+              d-block d-xl-none
+            "
+            type="submit"
+          >
+            platform login
+          </button>
         </div>
         <button
-          class="btn btn-primary rounded-pill login-button text-uppercase"
+          class="
+            btn btn-primary
+            rounded-pill
+            login-button
+            text-uppercase
+            d-none d-xl-block
+          "
           type="submit"
         >
           platform login
@@ -373,6 +420,16 @@
             <img
               class="d-lg-block d-none"
               src="./assets/images/software/camera-sw.png"
+              alt="camera software"
+            />
+            <img
+              class="
+                d-lg-none d-block
+                invisible
+                img-fluid
+                second-section__img-ph
+              "
+              src="./assets/images/software/camera-sw--sm.png"
               alt="camera software"
             />
             <img
@@ -747,6 +804,13 @@
               system, or turn the floodlights on overnight.
             </p>
           </div>
+          <div class="col-12 d-block d-lg-none invisible">
+            <img
+              class="img-fluid"
+              src="./assets/images/software/sw-bg-seven.png"
+              alt="sw-bg"
+            />
+          </div>
         </div>
       </section>
       <!-- seventh section -->
@@ -809,6 +873,112 @@
         </div>
       </section>
       <!-- nineth section -->
+
+      <!-- Footer -->
+      <footer class="footer section-container container">
+        <div class="footer-upper-content">
+          <div
+            class="
+              footer-upper_first
+              d-flex
+              justify-content-between
+              align-items-center
+            "
+          >
+            <img src="./assets/images/Giraffe_logo.png" alt="logo" />
+            <div class="dropdown">
+              <button
+                class="btn bg-white dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  class="me-1"
+                  src="./assets/images/america-flag.png"
+                  alt="america-flag"
+                />
+                United States
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-upper_second">
+            <div class="row">
+              <div class="col-lg-3 col-12 d-flex flex-column">
+                <a href="#" class="footer-pages-link-bold mb-4">
+                  Our Products
+                </a>
+                <a href="#" class="footer-pages-link-light mb-3">
+                  Three Max OMEGA 3 1000 mg
+                </a>
+                <a href="#" class="footer-pages-link-light mb-3">
+                  OMEGA 3-6-9
+                </a>
+                <a href="#" class="footer-pages-link-light mb-3">
+                  Magnesium Advanced
+                </a>
+                <a href="#" class="footer-pages-link-light mb-3">
+                  Magnesium Energy
+                </a>
+              </div>
+
+              <div class="col-lg-3 col-12 d-flex flex-column">
+                <a href="#" class="footer-pages-link-bold mb-4">
+                  About Giraffe
+                </a>
+                <a href="#" class="footer-pages-link-light mb-3"> About Us </a>
+                <a href="#" class="footer-pages-link-light mb-3"> Discounts </a>
+                <a href="#" class="footer-pages-link-light mb-3">
+                  Become an Ambassador
+                </a>
+              </div>
+
+              <div class="col-lg-3 col-12 d-flex flex-column">
+                <a href="#" class="footer-pages-link-bold mb-4"> Help </a>
+                <a href="#" class="footer-pages-link-light mb-3">
+                  FAQs & Help Center
+                </a>
+                <a href="#" class="footer-pages-link-light mb-3">
+                  Contact Us
+                </a>
+                <a href="#" class="footer-pages-link-light mb-3"> Shipping </a>
+                <a href="#" class="footer-pages-link-light mb-3">
+                  Return Policy
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom-content d-flex justify-content-between">
+          <span class="footer-bottom-content-copyright align-self-baseline"
+            >© Giraffe Co. 2021
+          </span>
+          <div class="footer-bottom-content-icons">
+            <a href="#" class="me-4">
+              <img src="./assets/images/insta.png" alt="instagram" />
+            </a>
+            <a href="#" class="me-4"
+              ><img src="./assets/images/facebook.png" alt="facebook" /></a
+            ><a href="#" class="me-4">
+              <img src="./assets/images/linkedin.png" alt="linkedin" /></a
+            ><a href="#" class="me-4">
+              <img src="./assets/images/googleplus.png" alt="googleplus"
+            /></a>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer -->
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>
