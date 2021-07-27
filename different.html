@@ -1494,12 +1494,12 @@
       <!-- Third Section -->
 
       <section class="container-fluid p-0">
-        <div class="third-section">
-          <div class="row mx-0">
-            <div class="col-12 col-xl-5 px-0">
+        <div class="third-section section-container">
+          <div class="row g-0">
+            <div class="col-12 col-xl-4">
               <div class="third-section-image-container">
                 <img
-                  class="img-fluid d-none d-xl-block"
+                  class="img-fluid d-none d-xl-block third-section-image--large"
                   src="./assets/images/different/third-section-img.png"
                   alt="motors"
                 />
@@ -1510,7 +1510,7 @@
                 />
               </div>
             </div>
-            <div class="col-12 col-xl-7 p-0">
+            <div class="col-12 col-xl-8 third-section-form">
               <!-- Form Desktop -->
               <form class="third-section-form-container d-none d-xl-block">
                 <div class="mb-4">
@@ -1526,7 +1526,16 @@
                     </div>
                     <div class="col-12 col-xl-6">
                       <label for="user" class="form-label">I am</label>
-                      <input type="password" class="form-control" id="user" />
+                      <select
+                        class="form-select form-control"
+                        aria-label="user"
+                      >
+                        <option selected value="end-user">
+                          an end user with a security
+                        </option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
                     </div>
                   </div>
                 </div>
