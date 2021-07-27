@@ -185,6 +185,7 @@ $nav-link-color: $dark;
     }
     .active {
       font-weight: 500;
+      color: #000000;
     }
     .active:before {
       content: '';
@@ -192,7 +193,7 @@ $nav-link-color: $dark;
       position: absolute;
       width: 36px;
       height: 3px;
-      left: 62%;
+      left: calc(100% - 18px);
       background: #f6d215;
       border-radius: 20px;
       transform: translate(-50%);
