@@ -923,6 +923,9 @@ $nav-link-color: $dark;
     .seventh-section__img {
       padding-top: 2.75rem;
       padding-bottom: 11.375rem;
+      img {
+        width: 87%;
+      }
       @include media-breakpoint-down(lg) {
         padding-bottom: 24px;
         img {
