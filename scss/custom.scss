@@ -211,14 +211,14 @@ $nav-link-color: $dark;
 
 .just-show-me-demo-section {
   background-image: url("../assets/images/home/bg-ten.png");
-  padding-top: 29px;
+  padding-top: 35px;
   padding-bottom: 77px;
   @include media-breakpoint-down(lg) {
     padding-top: 50px;
     padding-bottom: 108px;
   }
   h2 {
-    margin-bottom: 1.875rem;
+    margin-bottom: 49px;
     @include media-breakpoint-down(lg) {
       font-size: 28px;
       line-height: 43px;
