@@ -691,6 +691,12 @@ $nav-link-color: $dark;
     background-size: contain;
     background-position: right bottom;
     background-repeat: no-repeat;
+    padding-top: 44px;
+    h2 {
+      font-size: 2.25rem;
+      margin-bottom: 39px !important;
+    }
+
     @include media-breakpoint-down(lg) {
       padding-top: 45px;
     }
@@ -701,11 +707,17 @@ $nav-link-color: $dark;
       h2 {
         font-size: 2.25rem;
       }
-
+      p {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .special-margin-bottom {
+        margin-bottom: 94px !important;
+      }
       .second-section__text__bottom {
         margin-top: 0.875rem;
         p {
           margin-bottom: 1.9375rem;
+          color: white;
         }
       }
 
@@ -836,8 +848,8 @@ $nav-link-color: $dark;
     .fifth-section__img {
       position: absolute;
       right: 0;
-      top: 0;
-      width: 32%;
+      bottom: 0;
+      width: 30%;
       @include media-breakpoint-down(lg) {
         top: unset;
         bottom: 64px;
@@ -941,10 +953,16 @@ $nav-link-color: $dark;
   .giraffe-skin-bg {
     background-position: top right;
     background-image: url(../assets/images/software/sw-bg.png);
+    background-size: 67%;
   }
   .first-section {
     @include media-breakpoint-down(lg) {
       padding-bottom: 266px;
+    }
+    .different-link {
+      color: #000000;
+
+      text-decoration: none;
     }
     .first-section__header {
       div {
@@ -1069,23 +1087,27 @@ $nav-link-color: $dark;
     }
     .second-section__text {
       h2 {
-        margin-bottom: 2.6875rem;
+        margin-bottom: 49px;
+        color: white !important;
+
         @include media-breakpoint-down(lg) {
           font-size: 28px;
           margin-bottom: 50px;
         }
       }
+      p {
+        color: rgba(255, 255, 255, 0.8);
+        padding-right: 24px;
+      }
       > * {
         margin-bottom: 2.125rem;
+        color: rgba(255, 255, 255, 0.8);
         @include media-breakpoint-down(lg) {
           margin-bottom: 30px;
         }
       }
       @include media-breakpoint-down(lg) {
         margin-bottom: 17px;
-        p {
-          color: rgba(255, 255, 255, 0.8);
-        }
       }
     }
     .second-section__img {
@@ -1109,6 +1131,11 @@ $nav-link-color: $dark;
   .third-section {
     padding-top: 4.4375rem;
     padding-bottom: 4.8125rem;
+    .quotes-text {
+      padding-right: 58px;
+      line-height: 55.5px;
+      margin-top: 24px;
+    }
     @include media-breakpoint-down(lg) {
       padding-top: 85px;
       padding-bottom: 44px;
