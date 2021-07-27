@@ -1,14 +1,14 @@
 // Custom variables
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
 
 $font-size-base: 1rem;
-$font-family-sans-serif: 'Poppins', -apple-system, BlinkMacSystemFont,
-  'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$font-family-sans-serif: "Poppins", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-$font-family-hallelujah: 'Gloria Hallelujah', 'cursive';
+$font-family-hallelujah: "Gloria Hallelujah", "cursive";
 $h1-font-size: $font-size-base * 3.25;
 $headings-font-family: $font-family-sans-serif;
 $primary: #f6d215;
@@ -50,22 +50,22 @@ $input-box-shadow: null;
 $input-placeholder-color: rgba(51, 51, 51, 0.3);
 
 // import bootstrap
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import '../node_modules/bootstrap/scss/functions';
-@import '../node_modules/bootstrap/scss/utilities';
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/utilities";
 
 // 2. Include any default variable overrides here
 $nav-link-padding-y: 12px;
 $nav-link-color: $dark;
 
 // 3. Include remainder of required Bootstrap stylesheets
-@import '../node_modules/bootstrap/scss/variables';
-@import '../node_modules/bootstrap/scss/mixins';
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
 // 4. Include any optional Bootstrap components as you like
-@import '../node_modules/bootstrap/scss/nav';
+@import "../node_modules/bootstrap/scss/nav";
 
 // 5. Add additional custom code here
 .container body {
@@ -188,7 +188,7 @@ $nav-link-color: $dark;
       color: #000000;
     }
     .active:before {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 36px;
@@ -212,7 +212,7 @@ $nav-link-color: $dark;
 // NavBar
 
 .just-show-me-demo-section {
-  background-image: url('../assets/images/home/bg-ten.png');
+  background-image: url("../assets/images/home/bg-ten.png");
   padding-top: 35px;
   padding-bottom: 77px;
   @include media-breakpoint-down(lg) {
@@ -323,7 +323,7 @@ $nav-link-color: $dark;
   }
 
   .third-section {
-    background-image: url('../assets/images/home/second-bg.png');
+    background-image: url("../assets/images/home/second-bg.png");
     @include media-breakpoint-down(lg) {
       padding-top: 50px;
       padding-bottom: 108px;
@@ -1486,12 +1486,18 @@ $nav-link-color: $dark;
   }
 
   .third-section-form-container {
-    padding: 105px 100px 68px 0px;
+    padding: 76px 100px 68px 0px;
     @include media-breakpoint-down(xl) {
       padding: 28px 24px 76px;
     }
     input {
       max-width: 404px;
+      &.form-control {
+        padding: 9px 26px;
+      }
+      &::placeholder {
+        color: #c2c2c2;
+      }
       @include media-breakpoint-down(xl) {
         max-width: 100%;
       }
@@ -1501,6 +1507,7 @@ $nav-link-color: $dark;
       input {
         width: 14px;
         height: 14px;
+        border: 1px solid #ebebeb;
       }
       label {
         font-size: 14px;
@@ -1509,6 +1516,7 @@ $nav-link-color: $dark;
     textarea {
       border-radius: 16px;
       color: rgba(51, 51, 51, 0.3);
+      padding: 19px 26px 0px 26px;
     }
     .inline-checkbox {
       input {
@@ -1664,7 +1672,7 @@ $nav-link-color: $dark;
         display: flex;
         align-items: center;
         &::before {
-          content: '';
+          content: "";
           display: inline-block;
           background-image: url(../assets/images/about-us/list-style-type.png);
           height: 5px;
