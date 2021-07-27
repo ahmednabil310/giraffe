@@ -916,6 +916,7 @@ $nav-link-color: $dark;
     background-repeat: no-repeat;
     background-size: 38%;
     background-position: top left;
+
     @include media-breakpoint-down(lg) {
       background-size: contain;
       background-position: top -8% left;
@@ -923,6 +924,10 @@ $nav-link-color: $dark;
     .seventh-section__img {
       padding-top: 2.75rem;
       padding-bottom: 11.375rem;
+      img {
+        height: 1145px;
+        object-fit: cover;
+      }
       @include media-breakpoint-down(lg) {
         padding-bottom: 24px;
         img {
