@@ -441,6 +441,9 @@ $nav-link-color: $dark;
 
   .sixth-section {
     padding-bottom: 64px;
+    iframe {
+      max-width: 634px;
+    }
     @include media-breakpoint-down(lg) {
       padding-top: 3px;
     }
