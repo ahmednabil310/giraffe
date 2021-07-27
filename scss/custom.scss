@@ -525,10 +525,8 @@ $nav-link-color: $dark;
   }
 
   .nineth-section {
-    background-image: url(../assets/images/home/giraffe-bg.png);
-    background-size: auto auto;
-    background-repeat: no-repeat;
-    background-position: top right;
+    padding-top: 126px;
+    padding-bottom: 315px;
     @include media-breakpoint-down(lg) {
       padding-bottom: 123px;
     }
@@ -553,11 +551,12 @@ $nav-link-color: $dark;
           margin-bottom: 0px;
           @include media-breakpoint-down(lg) {
             font-size: 18px;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
           }
         }
         p {
           margin-bottom: 0;
+          line-height: 24px;
         }
       }
     }
