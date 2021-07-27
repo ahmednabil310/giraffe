@@ -1128,11 +1128,19 @@ $nav-link-color: $dark;
         top: 0;
         right: 0;
         width: 57%;
+        max-width: 912px;
+        @include media-breakpoint-down(xl) {
+          top: 50%;
+          width: 57%;
+          max-width: 912px;
+          transform: translate(0, -50%);
+        }
         @include media-breakpoint-down(lg) {
           width: 100%;
           top: unset;
           bottom: -41px;
           right: 0;
+          transform: none;
         }
       }
     }
