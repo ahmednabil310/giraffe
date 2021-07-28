@@ -1,0 +1,205 @@
+.different-page {
+  .header-section {
+    @include media-breakpoint-down(xl) {
+      padding: 0 24px;
+      align-items: flex-start !important;
+    }
+    .header-section-title {
+      margin-bottom: 12px;
+    }
+    .header-section_talk {
+      font-size: 24px;
+      color: #d99f23;
+      @include media-breakpoint-down(xl) {
+        font-size: 20px;
+        line-height: 39.65px;
+      }
+    }
+  }
+
+  .cards-section {
+    background-image: url(../assets/images/different/towers-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #f7d215;
+    padding: 170px 0px 319px;
+    @include media-breakpoint-down(xl) {
+      padding: 40px 0px 153px;
+    }
+    .cards-section-container {
+      padding: 0 274px;
+      @include media-breakpoint-down(xl) {
+        padding: 0px 28px;
+      }
+    }
+    .cards-section-card {
+      margin-bottom: 174px;
+      @include media-breakpoint-down(xl) {
+        margin-bottom: 85px;
+      }
+
+      .cards-section_cardTitle {
+        font-size: 36px;
+        margin-bottom: 28px;
+        color: #000000;
+        @include media-breakpoint-down(xl) {
+          font-size: 28px;
+          line-height: 43px;
+          margin-bottom: 24px;
+        }
+      }
+      .cards-section_cardTalk {
+        margin-bottom: 64px;
+        @include media-breakpoint-down(xl) {
+          br {
+            display: none;
+          }
+          font-size: 14px;
+          line-height: 21px;
+          margin-bottom: 54px;
+        }
+      }
+      .cards-section_cardContent-cons {
+        margin-right: 15px;
+        @include media-breakpoint-down(xl) {
+          margin-right: 0px;
+          margin-bottom: 0px;
+        }
+      }
+      .cons-container {
+        @include media-breakpoint-down(xl) {
+          margin-bottom: 34px;
+        }
+      }
+      .cards-section_cardContent-pros {
+        margin-left: 15px;
+        @include media-breakpoint-down(xl) {
+          margin-left: 0px;
+        }
+      }
+
+      .cards-section_cardContent {
+        background-color: white;
+        border-radius: 22px;
+        padding: 44px 56px 92px;
+        height: 100%;
+        @include media-breakpoint-down(xl) {
+          padding: 30px 36px 56px;
+        }
+
+        .cards-section_cardContent-settingsIcon {
+          margin-bottom: 36px;
+          @include media-breakpoint-down(xl) {
+            margin-bottom: 18px;
+          }
+        }
+        .cards-section_cardContent-title {
+          margin-bottom: 57px;
+          font-size: 20px;
+          font-weight: 600;
+          color: #000000;
+          @include media-breakpoint-down(xl) {
+            font-size: 15px;
+            margin-bottom: 37.85px;
+          }
+        }
+        .cards-section_cardContent-common {
+          margin-bottom: 42px;
+          @include media-breakpoint-down(xl) {
+            margin-bottom: 32px;
+          }
+          .cards-section_cardContent-common_img {
+            margin-bottom: 8px;
+          }
+          .cards-section_cardContent-common_talk {
+            font-size: 15px;
+            font-weight: 500;
+            color: #333333;
+            line-height: 22px;
+            @include media-breakpoint-down(xl) {
+              font-size: 12px;
+              line-height: 18px;
+              br {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .form-section {
+    .form-section-image-container {
+      .form-section-image--large {
+        position: absolute;
+        left: 0;
+        top: 0;
+        max-height: 100%;
+        width: 35.5625%;
+        height: 100%;
+      }
+    }
+    .form-section-form {
+      padding-left: 77px;
+      padding-bottom: 68px;
+      .form-section-form-container {
+        padding-top: 76px;
+        padding-bottom: 68px;
+        @include media-breakpoint-down(xl) {
+          padding: 28px 24px 76px;
+        }
+        select {
+          background-image: url(../assets/images/different/select-ply.png);
+          background-size: auto;
+        }
+        input,
+        select {
+          max-width: 404px;
+
+          &.form-control {
+            padding: 9px 26px;
+          }
+          &::placeholder {
+            color: #c2c2c2;
+          }
+          @include media-breakpoint-down(xl) {
+            max-width: 100%;
+          }
+        }
+        .radio-buttons-container {
+          height: 44.06px;
+          input {
+            width: 14px;
+            height: 14px;
+            border: 1px solid #ebebeb;
+          }
+          label {
+            font-size: 14px;
+          }
+        }
+        textarea {
+          border-radius: 16px;
+          color: rgba(51, 51, 51, 0.3);
+          padding: 19px 26px 0px 26px;
+        }
+        .inline-checkbox {
+          input {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+          }
+        }
+        .form-button {
+          width: 193px;
+          height: 44px;
+          @include media-breakpoint-down(xl) {
+            float: none !important;
+
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}

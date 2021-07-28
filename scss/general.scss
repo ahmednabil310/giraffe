@@ -1,0 +1,72 @@
+// 6. Add additional custom code here
+.container body {
+  font-family: $font-family-sans-serif;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+.fw-semi {
+  font-weight: 600;
+}
+.text-primary {
+  color: #d99f23 !important;
+}
+.main-title {
+  font-family: Poppins;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 67px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 42px;
+  color: #000000;
+  @include media-breakpoint-down(lg) {
+    font-size: 42px;
+    line-height: 56px;
+    margin-bottom: 23px;
+  }
+}
+.quotes-text {
+  font-size: 28px;
+  line-height: 55.51px;
+  font-weight: 400;
+  @include media-breakpoint-down(lg) {
+    font-size: 20px;
+    line-height: 39.65px;
+  }
+}
+
+.rotate {
+  img {
+    transform: rotate(180deg);
+  }
+}
+
+.text-hallelujah {
+  font-family: $font-family-hallelujah;
+}
+
+.section-container {
+  padding: 0 100px;
+  --bs-gutter-y: 0;
+  --bs-gutter-x: 0;
+  @include media-breakpoint-down(lg) {
+    padding: 0 60px;
+  }
+  @include media-breakpoint-down(lg) {
+    padding: 0 24px;
+  }
+}
+// End of Custom Code
+
+// Common Background for all
+.giraffe-skin-bg {
+  background-image: url(../assets/images/right-giraffe-bg.png);
+  background-position: left top;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding-top: 24px;
+}
+// Common background for all

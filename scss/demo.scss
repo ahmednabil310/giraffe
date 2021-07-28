@@ -1,0 +1,32 @@
+.demo-section {
+  background-image: url("../assets/images/home/bg-ten.png");
+  padding-top: 35px;
+  padding-bottom: 77px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 50px;
+    padding-bottom: 108px;
+  }
+  .demo-section-title {
+    margin-bottom: 49px;
+    @include media-breakpoint-down(lg) {
+      font-size: 28px;
+      line-height: 43px;
+      margin-bottom: 43px;
+    }
+  }
+  .demo-form {
+    justify-content: center;
+    input {
+      max-width: 404px;
+      margin-right: 22px;
+      @include media-breakpoint-down(lg) {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 29px;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.blog-section {
+  background-image: url(../assets/images/home/bg-twelve.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  .blog-section__text {
+    margin-bottom: 51px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 41px;
+    }
+    h2 {
+      @include media-breakpoint-down(lg) {
+        font-size: 36px;
+        line-height: 43px;
+      }
+    }
+  }
+  h5 {
+    margin-bottom: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 29px;
+    }
+  }
+
+  p {
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 20px;
+      line-height: 27px;
+    }
+  }
+  button {
+    @include media-breakpoint-down(lg) {
+      margin-top: 23px;
+    }
+  }
+}

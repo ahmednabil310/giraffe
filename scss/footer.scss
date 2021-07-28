@@ -1,0 +1,34 @@
+.footer {
+  padding-top: 64px;
+  padding-bottom: 89px;
+
+  .dropdown button {
+    padding: 0;
+  }
+  .footer-upper_first {
+    margin-bottom: 46px;
+  }
+  .footer-upper_second {
+    margin-bottom: 100px;
+    a {
+      text-decoration: none;
+    }
+
+    .footer-pages-link-bold {
+      color: #000000;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .footer-pages-link-light {
+      color: #a5a5a5;
+      font-weight: 400;
+      font-size: 16px;
+    }
+  }
+  .footer-bottom-content {
+    .footer-bottom-content-copyright {
+      color: #a5a5a5;
+      font-size: 14px;
+    }
+  }
+}
