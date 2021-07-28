@@ -1622,12 +1622,12 @@ $nav-link-color: $dark;
 
 // Blog
 .blog {
-  .first-section {
+  .header-section {
     margin-bottom: 97px;
     @include media-breakpoint-down(xl) {
       margin-bottom: 68px;
     }
-    .first-section_title {
+    .header-section_title {
       margin-bottom: 42px;
       font-weight: 600;
       @include media-breakpoint-down(xl) {
@@ -1635,7 +1635,7 @@ $nav-link-color: $dark;
         margin-bottom: 23px;
       }
     }
-    .first-section_subTitle {
+    .header-section_subTitle {
       @include media-breakpoint-down(xl) {
         br {
           display: none;
@@ -1671,27 +1671,23 @@ $nav-link-color: $dark;
 // Indvidual Blog
 
 .one-blog {
-  .first-section_backTo {
+  .header-section_backTo {
     font-weight: 600;
   }
-  .first-section_title {
+  .header-section_title {
     margin-top: 38px;
-    margin-bottom: 42px;
-    font-weight: 600;
+
     @include media-breakpoint-down(xl) {
       margin-top: 44px;
-      font-size: 32px;
-      line-height: 48px;
-      margin-bottom: 27px;
     }
   }
-  .first-section_date {
+  .header-section_date {
     font-weight: 600;
     @include media-breakpoint-down(xl) {
       font-size: 14px;
     }
   }
-  .first-section_image {
+  .header-section_image {
     margin-top: 67px;
     margin-bottom: 38px;
     @include media-breakpoint-down(xl) {
@@ -1703,93 +1699,79 @@ $nav-link-color: $dark;
 
 // Indvidual Blog
 
-// demo section
-
-.who-section {
-  .who-section__headers {
-    h1 {
-      margin-bottom: 2.625rem;
+// About Us
+.about-us {
+  .history-section {
+    padding-top: 5.125rem;
+    padding-bottom: 10.375rem;
+    .timeline-title {
+      color: #d99f23;
+      margin-bottom: 51px;
+      font-size: 36px;
     }
-  }
-}
-
-.history-section {
-  padding-top: 5.125rem;
-  padding-bottom: 10.375rem;
-  .timeline-title {
-    color: #d99f23;
-    margin-bottom: 51px;
-    font-size: 36px;
-  }
-  .history-timeline {
-    h2 {
-      font-size: 2.25rem;
-      margin-bottom: 3.1875rem;
-    }
-    .history-timeline__present {
-      font-size: 2.125rem;
-    }
-    .history-timeline__list {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding-top: 2.813rem;
-      padding-bottom: 2.813rem;
-      // list-style-image: url(../assets/images/about-us/list-style-type.png);
-      list-style-type: none;
-      padding-left: 0;
-      li {
-        font-size: 1.5rem;
+    .history-timeline {
+      h2 {
+        font-size: 2.25rem;
+        margin-bottom: 3.1875rem;
+      }
+      .history-timeline__present {
+        font-size: 2.125rem;
+      }
+      .history-timeline__list {
         display: flex;
-        align-items: center;
-        &::before {
-          content: '';
-          display: inline-block;
-          background-image: url(../assets/images/about-us/list-style-type.png);
-          height: 5px;
-          width: 27px;
-        }
-        p {
-          margin-bottom: 0;
-          padding-left: 1rem;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 2.813rem;
+        padding-bottom: 2.813rem;
+        // list-style-image: url(../assets/images/about-us/list-style-type.png);
+        list-style-type: none;
+        padding-left: 0;
+        li {
+          font-size: 1.5rem;
+          display: flex;
+          align-items: center;
+          &::before {
+            content: '';
+            display: inline-block;
+            background-image: url(../assets/images/about-us/list-style-type.png);
+            height: 5px;
+            width: 27px;
+          }
+          p {
+            margin-bottom: 0;
+            padding-left: 1rem;
+          }
         }
       }
     }
-  }
 
-  .history-section__text {
-    h2 {
-      margin-bottom: 1.875rem;
+    .history-section__text {
+      h2 {
+        margin-bottom: 1.875rem;
+      }
+      p {
+        margin-bottom: 2.25rem;
+      }
+      margin-top: 142px;
     }
-    p {
-      margin-bottom: 2.25rem;
+    .car-image {
+      margin-top: 67px;
     }
-    margin-top: 142px;
   }
-  .car-image {
-    margin-top: 67px;
+  .darker-demo {
+    background-image: url(../assets/images/home/second-bg.png);
+    .darker-demo-title {
+      margin-bottom: 10px;
+      font-size: 36px;
+      line-height: 71px;
+    }
+    .darker-demo-subTitle {
+      margin-bottom: 42px;
+      color: rgba(255, 255, 255, 0.6);
+    }
   }
 }
-
-// .demo-section {
-//   background-image: url(../assets/images/about-us/demo-bg.png) !important;
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-color: #1e212c;
-//   padding-bottom: 6rem;
-//   padding-top: 3rem;
-//   h2 {
-//     font-size: 2.25rem;
-//     margin-bottom: 0.625rem;
-//   }
-//   p {
-//     margin-bottom: 2.625rem;
-//     color: rgba(255, 255, 255, 0.6);
-//   }
-// }
-
-// demo section
-
+// About us
 // Footer
 
 .footer {
@@ -1828,17 +1810,3 @@ $nav-link-color: $dark;
 }
 
 // Footer
-
-// About Us
-
-.about-us {
-  .who-section__headers {
-    h1 {
-      font-size: 52px;
-      font-weight: 600;
-      line-height: 67px;
-    }
-  }
-}
-
-// About Us
