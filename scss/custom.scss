@@ -996,13 +996,15 @@ $nav-link-color: $dark;
 // Cutter Tower section
 // Hardware Page
 
+// Software Page
+
 .software-page {
   .giraffe-skin-bg {
     background-position: top right;
     background-image: url(../assets/images/software/sw-bg.png);
     background-size: 67%;
   }
-  .first-section {
+  .header-section {
     @include media-breakpoint-down(lg) {
       padding-bottom: 266px;
     }
@@ -1011,12 +1013,7 @@ $nav-link-color: $dark;
 
       text-decoration: none;
     }
-    .first-section__header {
-      div {
-        > * {
-          margin-bottom: 2.625rem;
-        }
-      }
+    .header-section__header {
       @include media-breakpoint-down(lg) {
         h1 {
           font-size: 42px;
@@ -1029,7 +1026,7 @@ $nav-link-color: $dark;
         }
       }
     }
-    .first-section__text {
+    .header-section__text {
       margin-top: 11.375rem;
       padding-right: 8.3%;
       padding-left: 0;
@@ -1049,7 +1046,7 @@ $nav-link-color: $dark;
         margin-bottom: 2.125rem;
       }
     }
-    .first-section__img__phone {
+    .header-section__img__phone {
       position: absolute;
       bottom: 0;
       right: 0;
@@ -1065,13 +1062,13 @@ $nav-link-color: $dark;
         bottom: -5%;
       }
     }
-    .first-section__img__laptop {
+    .header-section__img__laptop {
       position: absolute;
       bottom: 0;
       right: 0;
       max-width: 59.4%;
     }
-    .first-section__img__laptop--sm {
+    .header-section__img__laptop--sm {
       margin-left: -24px;
       margin-right: -24px;
       width: calc(100% + 48px);
@@ -1119,7 +1116,8 @@ $nav-link-color: $dark;
     }
   }
 
-  .second-section {
+  // Remote Section
+  .remote-section {
     background-image: url(../assets/images/software/background-dots-6.png);
     background-size: contain;
     background-position: bottom right;
@@ -1132,7 +1130,7 @@ $nav-link-color: $dark;
       background-size: auto;
       padding-bottom: 0;
     }
-    .second-section__text {
+    .remote-section__text {
       h2 {
         margin-bottom: 49px;
         color: white !important;
@@ -1157,8 +1155,8 @@ $nav-link-color: $dark;
         margin-bottom: 17px;
       }
     }
-    .second-section__img {
-      .second-section__img-ph {
+    .remote-section__img {
+      .remote-section__img-ph {
         position: static;
       }
       img {
@@ -1183,7 +1181,10 @@ $nav-link-color: $dark;
       }
     }
   }
-  .third-section {
+  // Remote Section
+
+  // Cloud Section
+  .cloud-section {
     padding-top: 4.4375rem;
     padding-bottom: 4.8125rem;
     .quotes-text {
@@ -1195,7 +1196,7 @@ $nav-link-color: $dark;
       padding-top: 85px;
       padding-bottom: 44px;
     }
-    .third-section__text {
+    .cloud-section__text {
       margin-top: 5.9375rem;
       @include media-breakpoint-down(lg) {
         margin-top: 55px;
@@ -1218,6 +1219,7 @@ $nav-link-color: $dark;
       }
     }
   }
+  // Cloud Section
 
   .fourth-section {
     background-image: url(../assets/images/software/lock-bg.png);
@@ -1430,6 +1432,7 @@ $nav-link-color: $dark;
     }
   }
 }
+// Software Page
 
 // What Makes us Different
 .different-page {
