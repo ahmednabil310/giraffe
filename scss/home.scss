@@ -29,6 +29,7 @@
     padding-top: 69px;
     padding-bottom: 90px;
     @include media-breakpoint-down(lg) {
+      padding-top: 52px;
       padding-bottom: 63px;
     }
     .giraffe-product-content_pros {
@@ -46,17 +47,17 @@
 
   // Get a Demo
   .get-demo {
-    background-image: url("../assets/images/home/second-bg.png");
+    background-image: url('../assets/images/home/second-bg.png');
   }
   // Get a Demo
 
   // Giraffe need
   .giraffe-need-section {
     position: relative;
-    padding-top: 70px;
-    padding-bottom: 64px;
+    padding-top: 73px;
+    padding-bottom: 90px;
     @include media-breakpoint-down(lg) {
-      padding-bottom: 24px;
+      padding-bottom: 64px;
     }
     .giraffe-need-img {
       position: absolute;
@@ -79,13 +80,16 @@
           font-size: 28px;
           line-height: 42px;
           margin-bottom: 28px;
+          color: $secondary;
         }
         ul {
           font-size: 14px;
+          margin-bottom: 25px;
         }
         p {
           font-size: 14px;
           line-height: 21px;
+          margin-bottom: 25px;
         }
       }
       & > * {
@@ -120,6 +124,8 @@
     }
     .tower-section-title {
       font-size: 36px;
+      line-height: 71.37px;
+      margin-bottom: 41px;
       @include media-breakpoint-down(lg) {
         margin-bottom: 50px;
         font-size: 28px;
@@ -127,7 +133,7 @@
       }
     }
     .tower-section__text {
-      & > * {
+      & > p {
         margin-bottom: 41px;
       }
       p {
@@ -135,7 +141,6 @@
         padding-right: 5%;
         @include media-breakpoint-down(lg) {
           font-size: 16px;
-          line-height: 24px;
           padding-right: 0;
         }
       }
@@ -160,9 +165,10 @@
   .video-section-container {
     padding-bottom: 64px;
     @include media-breakpoint-down(lg) {
-      padding-top: 3px;
+      padding-top: 0px;
     }
     iframe {
+      width: 100%;
       max-width: 634px;
       max-height: 406px;
     }
@@ -191,7 +197,7 @@
       width: 40.5%;
       max-height: 100%;
       @include media-breakpoint-down(lg) {
-        width: 72%;
+        width: 70%;
       }
     }
   }
@@ -204,14 +210,16 @@
     padding-top: 48px;
     padding-bottom: 28px;
     @include media-breakpoint-down(lg) {
-      padding-bottom: 35px;
+      padding-bottom: 71px;
     }
     div {
       & > * {
         margin-bottom: 35px;
+        &:last-child {
+          margin-bottom: 0px;
+        }
       }
       @include media-breakpoint-down(lg) {
-        font-size: 16px;
         h3 {
           font-size: 28px;
           margin-bottom: 51px;
@@ -228,14 +236,15 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 56px;
-    padding-bottom: 65px;
+    padding-bottom: 64px;
     @include media-breakpoint-down(lg) {
       padding-top: 84px;
       padding-bottom: 91px;
     }
     h3 {
       margin-bottom: 19px;
-      line-height: 45px;
+      line-height: 55.51px;
+      color: $secondary;
       -webkit-text-stroke: 0.8px black;
       @include media-breakpoint-down(lg) {
         font-size: 28px;
@@ -243,7 +252,7 @@
       }
     }
     h4 {
-      margin-bottom: 56px;
+      margin-bottom: 57px;
       line-height: 47.58px;
       @include media-breakpoint-down(lg) {
         font-size: 24px;
@@ -264,7 +273,7 @@
       margin-top: 126px;
       @include media-breakpoint-down(lg) {
         order: 2;
-        margin-top: 60px;
+        margin-top: 0px;
       }
       .services-section__list__text {
         margin-left: 20px;
@@ -277,16 +286,14 @@
           margin-bottom: 38px;
         }
         h5 {
-          font-weight: 600;
-          margin-bottom: 0px;
+          margin-bottom: 6px;
           @include media-breakpoint-down(lg) {
             font-size: 18px;
-            margin-bottom: 12px;
+            margin-bottom: 8px;
           }
         }
         p {
           margin-bottom: 0;
-          line-height: 24px;
         }
       }
     }
@@ -324,6 +331,10 @@
         padding-bottom: 0;
       }
       .whyGiraffe-section__text {
+        h2 {
+          font-size: 42px;
+          color: $secondary;
+        }
         & > * {
           margin-bottom: 38px;
         }
@@ -339,7 +350,7 @@
             margin-bottom: 52px;
           }
         }
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(md) {
           h2 {
             font-size: 28px;
           }

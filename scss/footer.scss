@@ -1,7 +1,7 @@
+// Footer
 .footer {
   padding-top: 64px;
   padding-bottom: 89px;
-
   .dropdown button {
     padding: 0;
   }
@@ -15,14 +15,11 @@
     }
 
     .footer-pages-link-bold {
-      color: #000000;
-      font-weight: 600;
+      color: $secondary;
       font-size: 18px;
     }
     .footer-pages-link-light {
       color: #a5a5a5;
-      font-weight: 400;
-      font-size: 16px;
     }
   }
   .footer-bottom-content {
@@ -32,3 +29,5 @@
     }
   }
 }
+
+// Footer
