@@ -24,12 +24,6 @@ $container-max-widths: (
 );
 $container-padding-x: 0;
 
-$navbar-light-toggler-border-color: transparent;
-$navbar-toggler-focus-width: 0;
-
-$dropdown-border-radius: 0;
-$dropdown-border-width: 3;
-
 $btn-padding-y: 0.563rem;
 $btn-padding-x: 2.3125rem;
 $btn-font-weight: 500;
@@ -78,30 +72,38 @@ $nav-link-color: $dark;
 .fw-semi {
   font-weight: 600;
 }
-
 .text-primary {
   color: #d99f23 !important;
+}
+.main-title {
+  font-family: Poppins;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 67px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 42px;
+  color: #000000;
+  @include media-breakpoint-down(lg) {
+    font-size: 42px;
+    line-height: 56px;
+    margin-bottom: 23px;
+  }
+}
+.quotes-text {
+  font-size: 28px;
+  line-height: 55.51px;
+  font-weight: 400;
+  @include media-breakpoint-down(lg) {
+    font-size: 20px;
+    line-height: 39.65px;
+  }
 }
 
 .rotate {
   img {
     transform: rotate(180deg);
-  }
-}
-
-.demo-form {
-  justify-content: center;
-  input {
-    max-width: 404px;
-    margin-right: 1.375rem;
-    @include media-breakpoint-down(lg) {
-      margin-right: 0;
-      width: 100%;
-      margin-bottom: 29px;
-    }
-  }
-  @include media-breakpoint-down(lg) {
-    flex-direction: column;
   }
 }
 
@@ -120,15 +122,7 @@ $nav-link-color: $dark;
     padding: 0 24px;
   }
 }
-
-.giraffe-skin-bg {
-  background-image: url(../assets/images/right-giraffe-bg.png);
-  background-position: left top;
-  background-size: auto;
-  background-repeat: no-repeat;
-  padding-top: 24px;
-}
-
+// End of Custom Code
 // NavBar
 
 .navbar {
@@ -211,7 +205,17 @@ $nav-link-color: $dark;
 }
 // NavBar
 
-.just-show-me-demo-section {
+// Common Background for all
+.giraffe-skin-bg {
+  background-image: url(../assets/images/right-giraffe-bg.png);
+  background-position: left top;
+  background-size: auto;
+  background-repeat: no-repeat;
+  padding-top: 24px;
+}
+// Common background for all
+
+.demo-section {
   background-image: url('../assets/images/home/bg-ten.png');
   padding-top: 35px;
   padding-bottom: 77px;
@@ -219,12 +223,26 @@ $nav-link-color: $dark;
     padding-top: 50px;
     padding-bottom: 108px;
   }
-  h2 {
+  .demo-section-title {
     margin-bottom: 49px;
     @include media-breakpoint-down(lg) {
       font-size: 28px;
       line-height: 43px;
       margin-bottom: 43px;
+    }
+  }
+  .demo-form {
+    input {
+      max-width: 404px;
+      margin-right: 1.375rem;
+      @include media-breakpoint-down(lg) {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 29px;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
     }
   }
 }
@@ -272,24 +290,16 @@ $nav-link-color: $dark;
 // Home Page
 
 .home-page {
-  .first-section {
+  // Home Page Header
+  .header-container {
     position: relative;
-    .first-section__header {
+    .header-container__content {
       padding-bottom: 325px;
       @include media-breakpoint-down(lg) {
         padding-bottom: 2px;
       }
-
-      h1 {
-        margin-bottom: 42px;
-        @include media-breakpoint-down(lg) {
-          margin-bottom: 23px;
-          font-size: 42px;
-          line-height: 56px;
-        }
-      }
     }
-    .first-section__image {
+    .header-container__image {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -300,20 +310,22 @@ $nav-link-color: $dark;
       }
     }
   }
-  .second-section-container {
+  // Home Page Header
+
+  // Home Page Giraffe product
+  .giraffe-product-container {
     background-color: #fbfbfb;
   }
-  .second-section {
+  .giraffe-product-content {
     padding-top: 69px;
     padding-bottom: 90px;
     @include media-breakpoint-down(lg) {
       padding-bottom: 63px;
     }
-    .second-sction--right {
+    .giraffe-product-content_pros {
       font-size: 18px;
-      font-weight: 500;
-      li {
-        font-weight: 600;
+      .pros-list {
+        margin: 27px 0;
       }
       @include media-breakpoint-down(lg) {
         margin-top: 49px;
@@ -321,32 +333,23 @@ $nav-link-color: $dark;
       }
     }
   }
+  // Home Page Giraffe product
 
-  .third-section {
+  // Get a Demo
+  .get-demo {
     background-image: url('../assets/images/home/second-bg.png');
-    @include media-breakpoint-down(lg) {
-      padding-top: 50px;
-      padding-bottom: 108px;
-    }
-    // h3 {
-    //   margin-bottom: 1.875rem;
-    //   font-weight: 400;
-    //   @include media-breakpoint-down(lg) {
-    //     font-size: 28px;
-    //     margin-bottom: 43px;
-    //     line-height: 43px;
-    //   }
-    // }
   }
+  // Get a Demo
 
-  .fourth-section {
+  // Giraffe need
+  .giraffe-need-section {
     position: relative;
     padding-top: 70px;
     padding-bottom: 64px;
     @include media-breakpoint-down(lg) {
       padding-bottom: 24px;
     }
-    .fourth-section__img {
+    .giraffe-need-img {
       position: absolute;
       left: 0;
       top: 0;
@@ -359,7 +362,7 @@ $nav-link-color: $dark;
         width: 95%;
       }
     }
-    .fourth-section__text {
+    .giraffe-need-text {
       padding-left: 87px;
       @include media-breakpoint-down(lg) {
         padding-left: 0;
@@ -382,7 +385,7 @@ $nav-link-color: $dark;
       ul {
         line-height: 36px;
       }
-      .foruth-section__text__first {
+      .giraffe-need-text-first {
         font-size: 1.125rem;
         line-height: 33px;
         @include media-breakpoint-down(lg) {
@@ -394,7 +397,10 @@ $nav-link-color: $dark;
     }
   }
 
-  .fifth-section {
+  // Giraffe need
+
+  // Tower Section
+  .tower-section {
     background-color: #1e212c;
     background-image: url(../assets/images/home/background-dots-5.png);
     background-size: contain;
@@ -403,16 +409,17 @@ $nav-link-color: $dark;
     @include media-breakpoint-down(lg) {
       padding-top: 45px;
     }
-    .fifth-section__text {
+    .tower-section-title {
+      font-size: 36px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 50px;
+        font-size: 28px;
+        line-height: 45px;
+      }
+    }
+    .tower-section__text {
       & > * {
         margin-bottom: 41px;
-      }
-      h2 {
-        @include media-breakpoint-down(lg) {
-          margin-bottom: 50px;
-          font-size: 28px;
-          line-height: 45px;
-        }
       }
       p {
         font-size: 18px;
@@ -439,16 +446,19 @@ $nav-link-color: $dark;
     }
   }
 
-  .sixth-section {
-    padding-bottom: 64px;
+  // Tower Section
 
-    iframe {
-      max-width: 634px;
-    }
+  .video-section-container {
+    padding-bottom: 64px;
     @include media-breakpoint-down(lg) {
       padding-top: 3px;
     }
-    .sixth-section__videos {
+    iframe {
+      max-width: 634px;
+      max-height: 406px;
+    }
+
+    .video-section-videos {
       & > div {
         h2 {
           font-size: 36px;
@@ -465,7 +475,7 @@ $nav-link-color: $dark;
         }
       }
     }
-    .sixth-section__img {
+    .video-section-img {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -477,7 +487,8 @@ $nav-link-color: $dark;
     }
   }
 
-  .seventh-section {
+  // Giraffe's make it easy
+  .giraffeMakeit-section {
     background-image: url(../assets/images/home/seven-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -500,8 +511,10 @@ $nav-link-color: $dark;
       }
     }
   }
+  // Giraffe's make it easy
 
-  .eight-section {
+  // Contact Section
+  .contact-section {
     background-image: url(../assets/images/home/background-eight.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -529,20 +542,22 @@ $nav-link-color: $dark;
       }
     }
   }
+  // Contact Section
 
-  .nineth-section {
+  // Services Section
+  .services-section {
     padding-top: 126px;
     padding-bottom: 315px;
     @include media-breakpoint-down(lg) {
       padding-bottom: 123px;
     }
-    .nineth-section__list {
+    .services-section__list {
       margin-top: 7.875rem;
       @include media-breakpoint-down(lg) {
         order: 2;
         margin-top: 60px;
       }
-      .nineth-section__list__text {
+      .services-section__list__text {
         margin-left: 1.25rem;
         width: 91%;
         margin-bottom: 54px;
@@ -566,8 +581,8 @@ $nav-link-color: $dark;
         }
       }
     }
-    .nineth-section-imges {
-      .nineth-section-img-ph {
+    .services-section-imges {
+      .services-section-img-ph {
         margin-bottom: 5.625rem;
         width: 40%;
         @include media-breakpoint-down(lg) {
@@ -575,7 +590,7 @@ $nav-link-color: $dark;
           width: 100%;
         }
       }
-      .nineth-section-img {
+      .services-section-img {
         position: absolute;
         top: 0%;
         right: 0;
@@ -588,11 +603,10 @@ $nav-link-color: $dark;
     }
   }
 
-  .eleventh-section {
-    padding-bottom: 165px;
-    @include media-breakpoint-down(lg) {
-      padding-bottom: 0;
-    }
+  // Why Giraffe Section
+  .whyGiraffe-section {
+    padding-bottom: 0;
+
     .row {
       padding-top: 5.8125rem;
       padding-bottom: 6.5rem;
@@ -600,7 +614,7 @@ $nav-link-color: $dark;
         padding-top: 44px;
         padding-bottom: 0;
       }
-      .eleventh-section__text {
+      .whyGiraffe-section__text {
         & > * {
           margin-bottom: 2.375rem;
         }
@@ -626,7 +640,7 @@ $nav-link-color: $dark;
           }
         }
       }
-      .eleventh-section__img {
+      .whyGiraffe-section__img {
         position: absolute;
         top: 0;
         right: 0;
@@ -636,7 +650,7 @@ $nav-link-color: $dark;
           width: 94%;
         }
       }
-      .eleventh-section__phone {
+      .whyGiraffe-section__phone {
         margin-top: 80px;
         margin-left: 55px;
         @include media-breakpoint-down(lg) {
@@ -648,6 +662,7 @@ $nav-link-color: $dark;
       }
     }
   }
+  // Why Giraffe Section
 }
 
 // Home Page
@@ -1764,22 +1779,22 @@ $nav-link-color: $dark;
   }
 }
 
-.demo-section {
-  background-image: url(../assets/images/about-us/demo-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #1e212c;
-  padding-bottom: 6rem;
-  padding-top: 3rem;
-  h2 {
-    font-size: 2.25rem;
-    margin-bottom: 0.625rem;
-  }
-  p {
-    margin-bottom: 2.625rem;
-    color: rgba(255, 255, 255, 0.6);
-  }
-}
+// .demo-section {
+//   background-image: url(../assets/images/about-us/demo-bg.png) !important;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-color: #1e212c;
+//   padding-bottom: 6rem;
+//   padding-top: 3rem;
+//   h2 {
+//     font-size: 2.25rem;
+//     margin-bottom: 0.625rem;
+//   }
+//   p {
+//     margin-bottom: 2.625rem;
+//     color: rgba(255, 255, 255, 0.6);
+//   }
+// }
 
 // demo section
 
