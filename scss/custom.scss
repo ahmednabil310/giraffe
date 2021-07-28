@@ -148,6 +148,8 @@ $nav-link-color: $dark;
       display: none;
     }
     .dropdown-menu {
+      border: 0;
+      border-radius: 0;
       border-left: 3px solid $primary;
       box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.08);
       @media screen and (max-width: 1200px) {
@@ -1569,6 +1571,7 @@ $nav-link-color: $dark;
         input,
         select {
           max-width: 404px;
+
           &.form-control {
             padding: 9px 26px;
           }
@@ -1616,17 +1619,6 @@ $nav-link-color: $dark;
   }
 }
 // What Makes us Different
-
-// Case Studies
-
-.case-study {
-  .first-section_title {
-    margin-bottom: 42px;
-    font-weight: 600;
-  }
-}
-
-// Case Studies
 
 // Blog
 .blog {
