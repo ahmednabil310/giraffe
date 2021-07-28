@@ -1,5 +1,4 @@
 // NavBar
-
 .navbar {
   margin-top: 24px;
   font-family: Poppins;
@@ -14,6 +13,7 @@
   }
   .navbar-toggler {
     border: 0;
+    color: transparent;
   }
   .navbar-nav {
     .dropdown-toggle::after {
@@ -32,7 +32,7 @@
         background-color: transparent;
         box-shadow: unset;
       }
-      a {
+      .dropdown-item {
         @media screen and (max-width: 1200px) {
           font-size: 20px;
           font-weight: 300;
@@ -41,9 +41,7 @@
       }
     }
     .nav-link {
-      font-size: 16px;
-      font-weight: 400;
-      color: black;
+      color: $secondary;
       margin-right: 48px;
       padding: 0;
       position: relative;
@@ -60,18 +58,18 @@
     .active {
       font-weight: 500;
       color: #000000;
-    }
-    .active:before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 36px;
-      height: 3px;
-      left: calc(100% - 18px);
-      background: #f6d215;
-      border-radius: 20px;
-      transform: translate(-50%);
-      top: -14%;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 36px;
+        height: 3px;
+        left: calc(100% - 18px);
+        background: #f6d215;
+        border-radius: 20px;
+        transform: translate(-50%);
+        top: -14%;
+      }
     }
   }
   .login-button {

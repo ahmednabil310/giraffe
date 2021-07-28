@@ -1,13 +1,13 @@
 // Custom variables
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 $font-size-base: 1rem;
-$font-family-sans-serif: "Poppins", -apple-system, BlinkMacSystemFont,
-  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif: 'Poppins', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-$font-family-hallelujah: "Gloria Hallelujah", "cursive";
+$font-family-hallelujah: 'Gloria Hallelujah', 'cursive';
 $h1-font-size: $font-size-base * 3.25;
 $headings-font-family: $font-family-sans-serif;
 $primary: #f6d215;
@@ -15,6 +15,7 @@ $secondary: #000000;
 $body-color: #333333;
 $border-radius: 50px;
 $border-color: rgba(51, 51, 51, 0.1);
+
 $container-max-widths: (
   sm: 100%,
   md: 100%,
@@ -43,30 +44,24 @@ $input-box-shadow: null;
 $input-placeholder-color: rgba(51, 51, 51, 0.3);
 
 // import bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/utilities";
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/utilities';
 
 // 2. Include any default variable overrides here
 $nav-link-padding-y: 12px;
 $nav-link-color: $dark;
 
 // 3. Include remainder of required Bootstrap stylesheets
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
 
 // 4. Include any optional Bootstrap components as you like
-@import "../node_modules/bootstrap/scss/nav";
+@import '../node_modules/bootstrap/scss/nav';
 
 // 5. including our own components
-@import "./navbar";
-@import "./home";
-@import "./hardware";
-@import "./software";
-@import "./blog";
-@import "./about-us";
 
 // 6. Add additional custom code here
 .container body {
@@ -142,7 +137,7 @@ $nav-link-color: $dark;
 // Common background for all
 
 .demo-section {
-  background-image: url("../assets/images/home/bg-ten.png");
+  background-image: url('../assets/images/home/bg-ten.png');
   padding-top: 35px;
   padding-bottom: 77px;
   @include media-breakpoint-down(lg) {
@@ -179,16 +174,25 @@ $nav-link-color: $dark;
   background-size: cover;
   padding-bottom: 50px;
   padding-top: 40px;
-  .blog-section__text {
+  @include media-breakpoint-down(lg) {
+    padding-top: 49px;
+    padding-bottom: 70px;
+  }
+  .blog-section__title {
     margin-bottom: 51px;
+
     @include media-breakpoint-down(lg) {
       margin-bottom: 41px;
     }
     h2 {
+      font-size: 36px;
       @include media-breakpoint-down(lg) {
         font-size: 36px;
         line-height: 43px;
       }
+    }
+    button {
+      padding: 0.63rem 2.8rem;
     }
   }
   h5 {
@@ -204,11 +208,9 @@ $nav-link-color: $dark;
     @include media-breakpoint-down(lg) {
       margin-bottom: 20px;
       line-height: 27px;
-    }
-  }
-  button {
-    @include media-breakpoint-down(lg) {
-      margin-top: 23px;
+      &:last-child {
+        margin-bottom: 43px;
+      }
     }
   }
 }
@@ -432,54 +434,11 @@ $nav-link-color: $dark;
     }
   }
 }
-// What Makes us Different
 
-// Blog
-
-// Blog
-
-// Indvidual Blog
-
-// Indvidual Blog
-
-// About Us
-
-// About us
-// Footer
-
-.footer {
-  padding-top: 64px;
-  padding-bottom: 89px;
-
-  .dropdown button {
-    padding: 0;
-  }
-  .footer-upper_first {
-    margin-bottom: 46px;
-  }
-  .footer-upper_second {
-    margin-bottom: 100px;
-    a {
-      text-decoration: none;
-    }
-
-    .footer-pages-link-bold {
-      color: #000000;
-      font-weight: 600;
-      font-size: 18px;
-    }
-    .footer-pages-link-light {
-      color: #a5a5a5;
-      font-weight: 400;
-      font-size: 16px;
-    }
-  }
-  .footer-bottom-content {
-    .footer-bottom-content-copyright {
-      color: #a5a5a5;
-      font-size: 14px;
-    }
-  }
-}
-
-// Footer
+@import './navbar';
+@import './home';
+@import './hardware';
+@import './software';
+@import './blog';
+@import './about-us';
+@import './footer';
