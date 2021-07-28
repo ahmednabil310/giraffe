@@ -674,42 +674,45 @@ $nav-link-color: $dark;
 
 // Hardware Page
 .hardware-page {
-  .first-section {
-    padding-bottom: 0.8125rem;
-    h3 {
-      color: #d99f23 !important;
+  .header-section {
+    padding-bottom: 43px;
+    .quotes-text {
       @include media-breakpoint-down(lg) {
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 40px;
         margin-top: 47px;
       }
     }
     @include media-breakpoint-down(lg) {
-      padding-bottom: 60px;
+      padding-bottom: 87px;
     }
-    .row {
-      margin-bottom: 1.875rem;
+    .upper-header {
+      margin-bottom: 130px;
+    }
+    .header-section__server-text {
+      & > * {
+        margin-bottom: 33px;
+        color: #000000;
+      }
+      button {
+        margin-top: 17px;
+        margin-bottom: 0;
+      }
     }
     @include media-breakpoint-down(lg) {
-      h1 {
-        font-size: 42px;
-        line-height: 56px;
-        margin-bottom: 23px;
-      }
-      .first-section__server-text {
+      .header-section__server-text {
         font-size: 14px;
         & > * {
           margin-bottom: 27px;
         }
         button {
           margin-top: 31px;
+          margin-bottom: 0;
         }
       }
     }
   }
 
-  .second-section {
+  // Fight Section
+  .fight-section {
     background-color: #1e212c;
     background-image: url(../assets/images/home/background-dots-5.png);
     background-size: contain;
@@ -724,7 +727,7 @@ $nav-link-color: $dark;
     @include media-breakpoint-down(lg) {
       padding-top: 45px;
     }
-    .second-section__text {
+    .fight-section__text {
       & > * {
         margin-bottom: 1.9375rem;
       }
@@ -737,7 +740,7 @@ $nav-link-color: $dark;
       .special-margin-bottom {
         margin-bottom: 94px !important;
       }
-      .second-section__text__bottom {
+      .fight-section__text__bottom {
         margin-top: 0.875rem;
         p {
           margin-bottom: 1.9375rem;
@@ -755,7 +758,7 @@ $nav-link-color: $dark;
           margin-bottom: 36px;
           color: rgba(255, 255, 255, 0.8);
         }
-        .second-section__text__bottom {
+        .fight-section__text__bottom {
           margin-top: 5px;
           margin-bottom: 0;
           p {
@@ -768,7 +771,7 @@ $nav-link-color: $dark;
         }
       }
     }
-    .second-section__img {
+    .fight-section__img {
       position: absolute;
       right: 0;
       top: 0;
@@ -784,14 +787,18 @@ $nav-link-color: $dark;
       }
     }
   }
-  .third-section {
+
+  // Fight Section
+
+  // Integration Section
+  .integration-section {
     padding-top: 5.9375rem;
     padding-bottom: 3.5rem;
     @include media-breakpoint-down(lg) {
       padding-top: 66px;
       padding-bottom: 80px;
     }
-    .third-section__text {
+    .integration-section__text {
       & > * {
         margin-bottom: 2.125rem;
       }
@@ -809,7 +816,10 @@ $nav-link-color: $dark;
       }
     }
   }
-  .fourth-section {
+  // Integration Section
+
+  // Compare Section
+  .compare-section {
     background-image: url(../assets/images/hardware/bg-four.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -824,7 +834,7 @@ $nav-link-color: $dark;
         font-weight: 400;
       }
     }
-    .fourth-section__list {
+    .compare-section__list {
       margin-top: 3.0625rem;
       div {
         margin-left: 1.4375rem;
@@ -849,8 +859,9 @@ $nav-link-color: $dark;
       }
     }
   }
+  // Compare Section
 
-  .fifth-section {
+  .advantages-section {
     padding-top: 5.1875rem;
     padding-bottom: 3.4375rem;
     @include media-breakpoint-down(lg) {
@@ -861,7 +872,7 @@ $nav-link-color: $dark;
       font-size: 32px;
     }
 
-    .fifth-section__text {
+    .advantages-section__text {
       & > * {
         margin-bottom: 28px;
       }
@@ -869,7 +880,7 @@ $nav-link-color: $dark;
         margin-top: 0.75rem;
       }
     }
-    .fifth-section__img {
+    .advantages-section__img {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -884,7 +895,11 @@ $nav-link-color: $dark;
       }
     }
   }
-  .sixth-section {
+  // Compare Section
+
+  // Powered Section
+
+  .powered-section {
     background-image: url(../assets/images/hardware/bg-six.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -895,7 +910,7 @@ $nav-link-color: $dark;
       padding-bottom: 58px;
       padding-top: 55px;
     }
-    .sixth-section__text {
+    .powered-section__text {
       padding-left: 3.625rem;
       & > * {
         margin-bottom: 2.125rem;
@@ -913,7 +928,7 @@ $nav-link-color: $dark;
         }
       }
     }
-    .sixth-section__img {
+    .powered-section__img {
       position: absolute;
       left: 0;
       top: 0;
@@ -931,7 +946,10 @@ $nav-link-color: $dark;
       }
     }
   }
-  .seventh-section {
+  // Powered Section
+
+  // Cutter Tower section
+  .cuttedTower {
     background-image: url(../assets/images/hardware/seven-bg.png);
     background-repeat: no-repeat;
     background-size: 38%;
@@ -941,7 +959,7 @@ $nav-link-color: $dark;
       background-size: contain;
       background-position: top -8% left;
     }
-    .seventh-section__img {
+    .cuttedTower__img {
       padding-top: 2.75rem;
       padding-bottom: 11.375rem;
       img {
@@ -955,7 +973,7 @@ $nav-link-color: $dark;
         }
       }
     }
-    .seventh-section__text {
+    .cuttedTower__text {
       padding-top: 11.75rem;
       & > * {
         margin-bottom: 2.125rem;
@@ -975,7 +993,7 @@ $nav-link-color: $dark;
     }
   }
 }
-
+// Cutter Tower section
 // Hardware Page
 
 .software-page {
