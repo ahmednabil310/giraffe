@@ -11,6 +11,9 @@
     }
     .upper-header {
       margin-bottom: 130px;
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 0;
+      }
     }
     .header-section__server-text {
       & > * {
@@ -274,7 +277,7 @@
   // Powered Section
 
   // Cutter Tower section
-  .cuttedTower {
+  .cuttedTower-section {
     background-image: url(../assets/images/hardware/seven-bg.png);
     background-repeat: no-repeat;
     background-size: 38%;
@@ -283,10 +286,12 @@
     @include media-breakpoint-down(lg) {
       background-size: contain;
       background-position: top -8% left;
+      padding-bottom: 83px;
     }
-    .cuttedTower__img {
+    .cuttedTower-section__img {
       padding-top: 44px;
       padding-bottom: 182px;
+
       img {
         height: 1145px;
         object-fit: cover;
@@ -294,7 +299,8 @@
       @include media-breakpoint-down(lg) {
         padding-bottom: 24px;
         img {
-          width: 62%;
+          width: 58%;
+          height: unset;
         }
       }
     }
@@ -313,6 +319,9 @@
         }
         button {
           margin-top: 19px;
+          @include media-breakpoint-down(lg) {
+            margin-bottom: 0;
+          }
         }
       }
     }
