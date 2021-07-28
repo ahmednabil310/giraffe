@@ -166,6 +166,7 @@
           }
           &::placeholder {
             color: #c2c2c2;
+            font-weight: 500;
           }
           @include media-breakpoint-down(xl) {
             max-width: 100%;
