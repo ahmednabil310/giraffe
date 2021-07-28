@@ -1,0 +1,71 @@
+.blog {
+  .header-section {
+    margin-bottom: 97px;
+    @include media-breakpoint-down(xl) {
+      margin-bottom: 68px;
+    }
+    .header-section_title {
+      margin-bottom: 42px;
+      font-weight: 600;
+      @include media-breakpoint-down(xl) {
+        font-size: 42px;
+        margin-bottom: 23px;
+      }
+    }
+    .header-section_subTitle {
+      @include media-breakpoint-down(xl) {
+        br {
+          display: none;
+        }
+        font-size: 21px;
+      }
+    }
+  }
+  .card-container {
+    .card-content-link-container {
+      text-decoration: none;
+      color: #333;
+    }
+    .card-content-container {
+      @include media-breakpoint-down(xl) {
+        margin-bottom: 65px;
+      }
+      .card-content-container_title {
+        @include media-breakpoint-down(xl) {
+          font-size: 32px;
+          line-height: 48px;
+        }
+      }
+    }
+  }
+  .cards-columns-container {
+    margin-bottom: 85px;
+  }
+}
+
+.one-blog {
+  .header-section_backTo {
+    font-weight: 600;
+  }
+  .header-section_title {
+    margin-top: 38px;
+
+    @include media-breakpoint-down(xl) {
+      margin-top: 44px;
+    }
+  }
+  .header-section_date {
+    font-weight: 600;
+    @include media-breakpoint-down(xl) {
+      font-size: 14px;
+    }
+  }
+  .header-section_image {
+    margin-top: 67px;
+    margin-bottom: 38px;
+    @include media-breakpoint-down(xl) {
+      margin-top: 47px;
+      margin-bottom: 30px;
+    }
+  }
+}

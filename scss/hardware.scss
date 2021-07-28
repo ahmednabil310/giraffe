@@ -1,0 +1,320 @@
+.hardware-page {
+  .header-section {
+    padding-bottom: 43px;
+    .quotes-text {
+      @include media-breakpoint-down(lg) {
+        margin-top: 47px;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      padding-bottom: 87px;
+    }
+    .upper-header {
+      margin-bottom: 130px;
+    }
+    .header-section__server-text {
+      & > * {
+        margin-bottom: 33px;
+        color: #000000;
+      }
+      button {
+        margin-top: 17px;
+        margin-bottom: 0;
+      }
+    }
+    @include media-breakpoint-down(lg) {
+      .header-section__server-text {
+        font-size: 14px;
+        & > * {
+          margin-bottom: 27px;
+        }
+        button {
+          margin-top: 31px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  // Fight Section
+  .fight-section {
+    background-color: #1e212c;
+    background-image: url(../assets/images/home/background-dots-5.png);
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding-top: 44px;
+    h2 {
+      font-size: 36px;
+      margin-bottom: 39px !important;
+    }
+
+    @include media-breakpoint-down(lg) {
+      padding-top: 45px;
+    }
+    .fight-section__text {
+      & > * {
+        margin-bottom: 31px;
+      }
+      h2 {
+        font-size: 36px;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      .special-margin-bottom {
+        margin-bottom: 94px !important;
+      }
+      .fight-section__text__bottom {
+        margin-top: 14px;
+        p {
+          margin-bottom: 31px;
+          color: white;
+        }
+      }
+
+      @include media-breakpoint-down(lg) {
+        h2 {
+          font-size: 28px;
+          margin-bottom: 50px;
+          line-height: 45px;
+        }
+        p {
+          margin-bottom: 36px;
+          color: rgba(255, 255, 255, 0.8);
+        }
+        .fight-section__text__bottom {
+          margin-top: 5px;
+          margin-bottom: 0;
+          p {
+            color: white;
+            margin-bottom: 0;
+            &:first-child {
+              margin-bottom: 36px;
+            }
+          }
+        }
+      }
+    }
+    .fight-section__img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      max-height: 100%;
+      width: 35%;
+      @include media-breakpoint-down(lg) {
+        top: unset;
+        bottom: 0;
+        width: 70%;
+      }
+      @include media-breakpoint-down(md) {
+        width: 91%;
+      }
+    }
+  }
+
+  // Fight Section
+
+  // Integration Section
+  .integration-section {
+    padding-top: 95px;
+    padding-bottom: 56px;
+    @include media-breakpoint-down(lg) {
+      padding-top: 66px;
+      padding-bottom: 80px;
+    }
+    .integration-section__text {
+      & > * {
+        margin-bottom: 34px;
+      }
+      @include media-breakpoint-down(lg) {
+        order: -1;
+        margin-bottom: 29px;
+        h2 {
+          font-size: 32px;
+          margin-bottom: 28px;
+          line-height: 48px;
+        }
+        p {
+          margin-bottom: 34px;
+        }
+      }
+    }
+  }
+  // Integration Section
+
+  // Compare Section
+  .compare-section {
+    background-image: url(../assets/images/hardware/bg-four.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    @include media-breakpoint-down(lg) {
+      padding-top: 40px;
+      padding-bottom: 26px;
+      h2 {
+        font-size: 28px;
+        line-height: 43px;
+        font-weight: 400;
+      }
+    }
+    .compare-section__list {
+      margin-top: 49px;
+      div {
+        margin-left: 23px;
+        & > :first-child {
+          margin-left: 0;
+        }
+        @include media-breakpoint-down(lg) {
+          margin-left: 0;
+          margin-bottom: 28px;
+          img {
+            margin-bottom: 16px;
+          }
+        }
+        p {
+          margin-bottom: 0;
+          margin-left: 12px;
+          font-weight: 500;
+          @include media-breakpoint-down(lg) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+  // Compare Section
+
+  .advantages-section {
+    padding-top: 83px;
+    padding-bottom: 55px;
+    @include media-breakpoint-down(lg) {
+      padding-top: 66px;
+      padding-bottom: 64px;
+    }
+    h2 {
+      font-size: 32px;
+    }
+
+    .advantages-section__text {
+      & > * {
+        margin-bottom: 28px;
+      }
+      button {
+        margin-top: 12px;
+      }
+    }
+    .advantages-section__img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 30%;
+      @include media-breakpoint-down(lg) {
+        top: unset;
+        bottom: 64px;
+        width: 60%;
+      }
+      @include media-breakpoint-down(md) {
+        width: 72%;
+      }
+    }
+  }
+  // Compare Section
+
+  // Powered Section
+
+  .powered-section {
+    background-image: url(../assets/images/hardware/bg-six.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1e212c;
+    padding-top: 30px;
+    padding-bottom: 49px;
+    @include media-breakpoint-down(lg) {
+      padding-bottom: 58px;
+      padding-top: 55px;
+    }
+    .powered-section__text {
+      padding-left: 58px;
+      & > * {
+        margin-bottom: 34px;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.8);
+      }
+      @include media-breakpoint-down(lg) {
+        order: -1;
+        margin-bottom: 58px;
+        padding-left: 0;
+        h2 {
+          font-size: 28px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .powered-section__img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      max-height: 560px;
+      @include media-breakpoint-down(lg) {
+        top: unset;
+        left: unset;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+      }
+      @include media-breakpoint-down(sm) {
+        width: 91%;
+      }
+    }
+  }
+  // Powered Section
+
+  // Cutter Tower section
+  .cuttedTower {
+    background-image: url(../assets/images/hardware/seven-bg.png);
+    background-repeat: no-repeat;
+    background-size: 38%;
+    background-position: top left;
+
+    @include media-breakpoint-down(lg) {
+      background-size: contain;
+      background-position: top -8% left;
+    }
+    .cuttedTower__img {
+      padding-top: 44px;
+      padding-bottom: 182px;
+      img {
+        height: 1145px;
+        object-fit: cover;
+      }
+      @include media-breakpoint-down(lg) {
+        padding-bottom: 24px;
+        img {
+          width: 62%;
+        }
+      }
+    }
+    .cuttedTower__text {
+      padding-top: 188px;
+      & > * {
+        margin-bottom: 34px;
+      }
+      @include media-breakpoint-down(lg) {
+        padding-top: 0;
+        padding-bottom: 49px;
+        h2 {
+          font-size: 32px;
+          margin-bottom: 28px;
+          line-height: 48px;
+        }
+        button {
+          margin-top: 19px;
+        }
+      }
+    }
+  }
+}
