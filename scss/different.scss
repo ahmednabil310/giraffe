@@ -143,11 +143,15 @@
     .form-section-form {
       padding-left: 77px;
       padding-bottom: 68px;
+      @include media-breakpoint-down(lg) {
+        padding-left: 0;
+      }
+
       .form-section-form-container {
         padding-top: 76px;
         padding-bottom: 68px;
         @include media-breakpoint-down(xl) {
-          padding: 28px 24px 76px;
+          padding: 28px 0 76px;
         }
         select {
           background-image: url(../assets/images/different/select-ply.png);
