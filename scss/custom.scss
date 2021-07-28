@@ -1,5 +1,4 @@
 // Custom variables
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
 
@@ -239,7 +238,7 @@ $nav-link-color: $dark;
   .demo-form {
     input {
       max-width: 404px;
-      margin-right: 1.375rem;
+      margin-right: 22px;
       @include media-breakpoint-down(lg) {
         margin-right: 0;
         width: 100%;
@@ -256,10 +255,10 @@ $nav-link-color: $dark;
   background-image: url(../assets/images/home/bg-twelve.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 3.125rem;
-  padding-top: 2.5rem;
+  padding-bottom: 50px;
+  padding-top: 40px;
   .blog-section__text {
-    margin-bottom: 3.1875rem;
+    margin-bottom: 51px;
     @include media-breakpoint-down(lg) {
       margin-bottom: 41px;
     }
@@ -391,7 +390,7 @@ $nav-link-color: $dark;
         line-height: 36px;
       }
       .giraffe-need-text-first {
-        font-size: 1.125rem;
+        font-size: 18px;
         line-height: 33px;
         @include media-breakpoint-down(lg) {
           font-size: 16px;
@@ -523,8 +522,8 @@ $nav-link-color: $dark;
     background-image: url(../assets/images/home/background-eight.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 3.5rem;
-    padding-bottom: 4.0625rem;
+    padding-top: 56px;
+    padding-bottom: 65px;
     @include media-breakpoint-down(lg) {
       padding-top: 84px;
       padding-bottom: 91px;
@@ -539,7 +538,7 @@ $nav-link-color: $dark;
       }
     }
     h4 {
-      margin-bottom: 3.5rem;
+      margin-bottom: 56px;
       line-height: 47.58px;
       @include media-breakpoint-down(lg) {
         font-size: 24px;
@@ -557,13 +556,13 @@ $nav-link-color: $dark;
       padding-bottom: 123px;
     }
     .services-section__list {
-      margin-top: 7.875rem;
+      margin-top: 126px;
       @include media-breakpoint-down(lg) {
         order: 2;
         margin-top: 60px;
       }
       .services-section__list__text {
-        margin-left: 1.25rem;
+        margin-left: 20px;
         width: 91%;
         margin-bottom: 54px;
         @include media-breakpoint-down(lg) {
@@ -588,7 +587,7 @@ $nav-link-color: $dark;
     }
     .services-section-imges {
       .services-section-img-ph {
-        margin-bottom: 5.625rem;
+        margin-bottom: 90px;
         width: 40%;
         @include media-breakpoint-down(lg) {
           margin-bottom: 0;
@@ -613,15 +612,15 @@ $nav-link-color: $dark;
     padding-bottom: 0;
 
     .row {
-      padding-top: 5.8125rem;
-      padding-bottom: 6.5rem;
+      padding-top: 93px;
+      padding-bottom: 104px;
       @include media-breakpoint-down(lg) {
         padding-top: 44px;
         padding-bottom: 0;
       }
       .whyGiraffe-section__text {
         & > * {
-          margin-bottom: 2.375rem;
+          margin-bottom: 38px;
         }
         @include media-breakpoint-down(lg) {
           order: 2;
@@ -720,7 +719,7 @@ $nav-link-color: $dark;
     background-repeat: no-repeat;
     padding-top: 44px;
     h2 {
-      font-size: 2.25rem;
+      font-size: 36px;
       margin-bottom: 39px !important;
     }
 
@@ -729,10 +728,10 @@ $nav-link-color: $dark;
     }
     .fight-section__text {
       & > * {
-        margin-bottom: 1.9375rem;
+        margin-bottom: 31px;
       }
       h2 {
-        font-size: 2.25rem;
+        font-size: 36px;
       }
       p {
         color: rgba(255, 255, 255, 0.8);
@@ -741,9 +740,9 @@ $nav-link-color: $dark;
         margin-bottom: 94px !important;
       }
       .fight-section__text__bottom {
-        margin-top: 0.875rem;
+        margin-top: 14px;
         p {
-          margin-bottom: 1.9375rem;
+          margin-bottom: 31px;
           color: white;
         }
       }
@@ -792,15 +791,15 @@ $nav-link-color: $dark;
 
   // Integration Section
   .integration-section {
-    padding-top: 5.9375rem;
-    padding-bottom: 3.5rem;
+    padding-top: 95px;
+    padding-bottom: 56px;
     @include media-breakpoint-down(lg) {
       padding-top: 66px;
       padding-bottom: 80px;
     }
     .integration-section__text {
       & > * {
-        margin-bottom: 2.125rem;
+        margin-bottom: 34px;
       }
       @include media-breakpoint-down(lg) {
         order: -1;
@@ -823,8 +822,8 @@ $nav-link-color: $dark;
     background-image: url(../assets/images/hardware/bg-four.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 1.875rem;
-    padding-bottom: 3.75rem;
+    padding-top: 30px;
+    padding-bottom: 60px;
     @include media-breakpoint-down(lg) {
       padding-top: 40px;
       padding-bottom: 26px;
@@ -835,9 +834,9 @@ $nav-link-color: $dark;
       }
     }
     .compare-section__list {
-      margin-top: 3.0625rem;
+      margin-top: 49px;
       div {
-        margin-left: 1.4375rem;
+        margin-left: 23px;
         & > :first-child {
           margin-left: 0;
         }
@@ -850,7 +849,7 @@ $nav-link-color: $dark;
         }
         p {
           margin-bottom: 0;
-          margin-left: 0.75rem;
+          margin-left: 12px;
           font-weight: 500;
           @include media-breakpoint-down(lg) {
             margin-left: 0;
@@ -862,8 +861,8 @@ $nav-link-color: $dark;
   // Compare Section
 
   .advantages-section {
-    padding-top: 5.1875rem;
-    padding-bottom: 3.4375rem;
+    padding-top: 83px;
+    padding-bottom: 55px;
     @include media-breakpoint-down(lg) {
       padding-top: 66px;
       padding-bottom: 64px;
@@ -877,7 +876,7 @@ $nav-link-color: $dark;
         margin-bottom: 28px;
       }
       button {
-        margin-top: 0.75rem;
+        margin-top: 12px;
       }
     }
     .advantages-section__img {
@@ -904,16 +903,16 @@ $nav-link-color: $dark;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #1e212c;
-    padding-top: 1.875rem;
-    padding-bottom: 3.0625rem;
+    padding-top: 30px;
+    padding-bottom: 49px;
     @include media-breakpoint-down(lg) {
       padding-bottom: 58px;
       padding-top: 55px;
     }
     .powered-section__text {
-      padding-left: 3.625rem;
+      padding-left: 58px;
       & > * {
-        margin-bottom: 2.125rem;
+        margin-bottom: 34px;
       }
       p {
         color: rgba(255, 255, 255, 0.8);
@@ -960,8 +959,8 @@ $nav-link-color: $dark;
       background-position: top -8% left;
     }
     .cuttedTower__img {
-      padding-top: 2.75rem;
-      padding-bottom: 11.375rem;
+      padding-top: 44px;
+      padding-bottom: 182px;
       img {
         height: 1145px;
         object-fit: cover;
@@ -974,9 +973,9 @@ $nav-link-color: $dark;
       }
     }
     .cuttedTower__text {
-      padding-top: 11.75rem;
+      padding-top: 188px;
       & > * {
-        margin-bottom: 2.125rem;
+        margin-bottom: 34px;
       }
       @include media-breakpoint-down(lg) {
         padding-top: 0;
@@ -1027,7 +1026,7 @@ $nav-link-color: $dark;
       }
     }
     .header-section__text {
-      margin-top: 11.375rem;
+      margin-top: 182px;
       padding-right: 8.3%;
       padding-left: 0;
       @include media-breakpoint-down(lg) {
@@ -1043,7 +1042,7 @@ $nav-link-color: $dark;
         }
       }
       > * {
-        margin-bottom: 2.125rem;
+        margin-bottom: 34px;
       }
     }
     .header-section__img__phone {
@@ -1080,9 +1079,9 @@ $nav-link-color: $dark;
     background-size: contain;
     background-position: top left;
     background-repeat: no-repeat;
-    padding-top: 4.125rem;
-    padding-bottom: 13.4375rem;
-    margin-top: 8.75rem;
+    padding-top: 66px;
+    padding-bottom: 215px;
+    margin-top: 140px;
     @include media-breakpoint-down(lg) {
       background: none;
       padding-bottom: 72px;
@@ -1091,9 +1090,9 @@ $nav-link-color: $dark;
     }
     .map-section__text {
       h5 {
-        font-size: 1.125rem;
-        margin-bottom: 0.8125rem;
-        margin-top: 1.5625rem;
+        font-size: 18px;
+        margin-bottom: 13px;
+        margin-top: 25px;
       }
       p {
         padding: 0 81px;
@@ -1127,8 +1126,8 @@ $nav-link-color: $dark;
     background-position: bottom right;
     background-repeat: no-repeat;
     background-color: #1e212c;
-    padding-top: 4.375rem;
-    padding-bottom: 4.6875rem;
+    padding-top: 70px;
+    padding-bottom: 75px;
     @include media-breakpoint-down(lg) {
       background-image: url(../assets/images/software/background-dots-5.png);
       background-size: auto;
@@ -1149,7 +1148,7 @@ $nav-link-color: $dark;
         padding-right: 24px;
       }
       > * {
-        margin-bottom: 2.125rem;
+        margin-bottom: 34px;
         color: rgba(255, 255, 255, 0.8);
         @include media-breakpoint-down(lg) {
           margin-bottom: 30px;
@@ -1189,8 +1188,8 @@ $nav-link-color: $dark;
 
   // Cloud Section
   .cloud-section {
-    padding-top: 4.4375rem;
-    padding-bottom: 4.8125rem;
+    padding-top: 71px;
+    padding-bottom: 125px;
     .quotes-text {
       padding-right: 58px;
       line-height: 55.5px;
@@ -1201,15 +1200,15 @@ $nav-link-color: $dark;
       padding-bottom: 44px;
     }
     .cloud-section__text {
-      margin-top: 5.9375rem;
+      margin-top: 95px;
       @include media-breakpoint-down(lg) {
         margin-top: 55px;
       }
       &:first-child {
-        margin-top: 3.125rem;
+        margin-top: 50px;
       }
       > * {
-        margin-bottom: 2.125rem;
+        margin-bottom: 34px;
       }
       @include media-breakpoint-down(lg) {
         h3 {
@@ -1231,15 +1230,15 @@ $nav-link-color: $dark;
     background-size: contain;
     background-position: bottom right;
     background-color: #f6d215;
-    padding-top: 3.25rem;
-    padding-bottom: 7.125rem;
+    padding-top: 52px;
+    padding-bottom: 114px;
     @include media-breakpoint-down(lg) {
       padding-top: 40px;
       padding-bottom: 40px;
     }
     .fourth-section__header {
       h2 {
-        margin-bottom: 2.875rem;
+        margin-bottom: 46px;
       }
     }
     .fourth-section__list {
@@ -1256,7 +1255,7 @@ $nav-link-color: $dark;
         }
         li {
           display: flex;
-          margin-bottom: 1.625rem;
+          margin-bottom: 26px;
           @include media-breakpoint-down(lg) {
             margin-bottom: 54px;
             flex-direction: column;
@@ -1265,7 +1264,7 @@ $nav-link-color: $dark;
             text-align: center;
           }
           .fourth-section__list__icon {
-            margin-right: 2rem;
+            margin-right: 32px;
             @include media-breakpoint-down(lg) {
               width: 42px;
               height: 42px;
@@ -1278,7 +1277,7 @@ $nav-link-color: $dark;
             }
           }
           h5 {
-            margin-bottom: 0.375rem;
+            margin-bottom: 6px;
             font-weight: bold;
             @include media-breakpoint-down(lg) {
               font-size: 18px;
@@ -1315,8 +1314,8 @@ $nav-link-color: $dark;
   }
 
   .fifth-section {
-    padding-top: 5.1875rem;
-    padding-bottom: 8rem;
+    padding-top: 83px;
+    padding-bottom: 128px;
     @include media-breakpoint-down(lg) {
       padding-top: 71px;
     }
@@ -1340,20 +1339,20 @@ $nav-link-color: $dark;
       }
     }
     .fifth-section__text {
-      margin-top: 5.4375rem;
+      margin-top: 87px;
       padding-left: 6%;
       @include media-breakpoint-down(lg) {
         padding-left: 0;
         margin-top: 0;
       }
       & > * {
-        margin-bottom: 2.125rem;
+        margin-bottom: 34px;
         @include media-breakpoint-down(lg) {
           margin-bottom: 32px;
         }
       }
       button {
-        margin-top: 0.625rem;
+        margin-top: 10حء;
         @include media-breakpoint-down(lg) {
           margin-top: 21px;
         }
@@ -1385,15 +1384,15 @@ $nav-link-color: $dark;
     background-image: url(../assets/images/software/sw-bg-six.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 3.8125rem;
-    padding-bottom: 3.9375rem;
+    padding-top: 61px;
+    padding-bottom: 63px;
     @include media-breakpoint-down(lg) {
       padding-top: 48px;
       padding-bottom: 83px;
     }
     .sixth-section__text {
       & > * {
-        margin-bottom: 2rem;
+        margin-bottom: 32px;
       }
       @include media-breakpoint-down(lg) {
         h5 {
@@ -1410,8 +1409,8 @@ $nav-link-color: $dark;
     background-position-y: -217px;
     background-position-x: right;
     background-repeat: no-repeat;
-    padding-top: 11.25rem;
-    padding-bottom: 9.0625rem;
+    padding-top: 180px;
+    padding-bottom: 145px;
 
     @include media-breakpoint-down(lg) {
       background-size: 68%;
@@ -1427,7 +1426,7 @@ $nav-link-color: $dark;
     .seventh-section__text {
       padding-right: 5%;
       & > * {
-        margin-bottom: 2.125rem;
+        margin-bottom: 34px;
       }
       @include media-breakpoint-down(lg) {
         padding-right: 0;
@@ -1731,8 +1730,8 @@ $nav-link-color: $dark;
 // About Us
 .about-us {
   .history-section {
-    padding-top: 5.125rem;
-    padding-bottom: 10.375rem;
+    padding-top: 82px;
+    padding-bottom: 166px;
     .timeline-title {
       color: #d99f23;
       margin-bottom: 51px;
@@ -1740,23 +1739,23 @@ $nav-link-color: $dark;
     }
     .history-timeline {
       h2 {
-        font-size: 2.25rem;
-        margin-bottom: 3.1875rem;
+        font-size: 36px;
+        margin-bottom: 51px;
       }
       .history-timeline__present {
-        font-size: 2.125rem;
+        font-size: 34px;
       }
       .history-timeline__list {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-top: 2.813rem;
-        padding-bottom: 2.813rem;
+        padding-top: 45px;
+        padding-bottom: 45px;
         // list-style-image: url(../assets/images/about-us/list-style-type.png);
         list-style-type: none;
         padding-left: 0;
         li {
-          font-size: 1.5rem;
+          font-size: 24px;
           display: flex;
           align-items: center;
           &::before {
@@ -1768,7 +1767,7 @@ $nav-link-color: $dark;
           }
           p {
             margin-bottom: 0;
-            padding-left: 1rem;
+            padding-left: 16px;
           }
         }
       }
@@ -1776,10 +1775,10 @@ $nav-link-color: $dark;
 
     .history-section__text {
       h2 {
-        margin-bottom: 1.875rem;
+        margin-bottom: 30px;
       }
       p {
-        margin-bottom: 2.25rem;
+        margin-bottom: 36px;
       }
       margin-top: 142px;
     }
