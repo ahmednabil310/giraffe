@@ -137,6 +137,9 @@ $nav-link-color: $dark;
       margin-top: 81px;
     }
   }
+  .navbar-toggler {
+    border: 0;
+  }
   .navbar-nav {
     .dropdown-toggle::after {
       border: 0;
@@ -1410,21 +1413,15 @@ $nav-link-color: $dark;
 
 // What Makes us Different
 .different-page {
-  .first-section {
+  .header-section {
     @include media-breakpoint-down(xl) {
       padding: 0 24px;
       align-items: flex-start !important;
     }
-    .first-section_title {
+    .header-section-title {
       margin-bottom: 12px;
-      font-weight: 600;
-      color: #000000;
-      @include media-breakpoint-down(xl) {
-        font-size: 42px;
-        line-height: 56px;
-      }
     }
-    .first-section_talk {
+    .header-section_talk {
       font-size: 24px;
       color: #d99f23;
       @include media-breakpoint-down(xl) {
@@ -1433,7 +1430,8 @@ $nav-link-color: $dark;
       }
     }
   }
-  .second-section {
+
+  .cards-section {
     background-image: url(../assets/images/different/towers-bg.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -1442,28 +1440,29 @@ $nav-link-color: $dark;
     @include media-breakpoint-down(xl) {
       padding: 40px 0px 153px;
     }
-    .second-section-container {
+    .cards-section-container {
       padding: 0 274px;
       @include media-breakpoint-down(xl) {
         padding: 0px 28px;
       }
     }
-    .second-section-card {
+    .cards-section-card {
       margin-bottom: 174px;
       @include media-breakpoint-down(xl) {
         margin-bottom: 85px;
       }
 
-      .second-section_cardTitle {
+      .cards-section_cardTitle {
         font-size: 36px;
         margin-bottom: 28px;
+        color: #000000;
         @include media-breakpoint-down(xl) {
           font-size: 28px;
           line-height: 43px;
           margin-bottom: 24px;
         }
       }
-      .second-section_cardTalk {
+      .cards-section_cardTalk {
         margin-bottom: 64px;
         @include media-breakpoint-down(xl) {
           br {
@@ -1474,7 +1473,7 @@ $nav-link-color: $dark;
           margin-bottom: 54px;
         }
       }
-      .second-section_cardContent-cons {
+      .cards-section_cardContent-cons {
         margin-right: 15px;
         @include media-breakpoint-down(xl) {
           margin-right: 0px;
@@ -1486,14 +1485,14 @@ $nav-link-color: $dark;
           margin-bottom: 34px;
         }
       }
-      .second-section_cardContent-pros {
+      .cards-section_cardContent-pros {
         margin-left: 15px;
         @include media-breakpoint-down(xl) {
           margin-left: 0px;
         }
       }
 
-      .second-section_cardContent {
+      .cards-section_cardContent {
         background-color: white;
         border-radius: 22px;
         padding: 44px 56px 92px;
@@ -1502,13 +1501,13 @@ $nav-link-color: $dark;
           padding: 30px 36px 56px;
         }
 
-        .second-section_cardContent-settingsIcon {
+        .cards-section_cardContent-settingsIcon {
           margin-bottom: 36px;
           @include media-breakpoint-down(xl) {
             margin-bottom: 18px;
           }
         }
-        .second-section_cardContent-title {
+        .cards-section_cardContent-title {
           margin-bottom: 57px;
           font-size: 20px;
           font-weight: 600;
@@ -1518,15 +1517,15 @@ $nav-link-color: $dark;
             margin-bottom: 37.85px;
           }
         }
-        .second-section_cardContent-common {
+        .cards-section_cardContent-common {
           margin-bottom: 42px;
           @include media-breakpoint-down(xl) {
             margin-bottom: 32px;
           }
-          .second-section_cardContent-common_img {
+          .cards-section_cardContent-common_img {
             margin-bottom: 8px;
           }
-          .second-section_cardContent-common_talk {
+          .cards-section_cardContent-common_talk {
             font-size: 15px;
             font-weight: 500;
             color: #333333;
@@ -1543,10 +1542,11 @@ $nav-link-color: $dark;
       }
     }
   }
-  .third-section {
-    .third-section-image-container {
-      .third-section-image--large {
-        position: absolute;
+
+  .form-section {
+    .form-section-image-container {
+      .form-section-image--large {
+        // position: absolute;
         left: 0;
         top: 0;
         max-height: 100%;
@@ -1554,9 +1554,9 @@ $nav-link-color: $dark;
         height: 100%;
       }
     }
-    .third-section-form {
+    .form-section-form {
       padding-left: 77px;
-      .third-section-form-container {
+      .form-section-form-container {
         padding-top: 76px;
         padding-bottom: 68px;
         @include media-breakpoint-down(xl) {
