@@ -36,6 +36,22 @@ h2 {
     line-height: 43px;
   }
 }
+h3 {
+  font-size: 28px;
+  line-height: 55.51px;
+  @include media-breakpoint-down(lg) {
+    font-size: 28px;
+    line-height: 45px;
+  }
+}
+h5 {
+  font-size: 20px;
+  line-height: 30px;
+  @include media-breakpoint-down(lg) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
 .font36 {
   font-size: 36px;
   line-height: 71px;
