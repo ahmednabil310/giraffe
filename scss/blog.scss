@@ -7,10 +7,6 @@
     .header-section_title {
       margin-bottom: 42px;
       font-weight: 600;
-      @include media-breakpoint-down(xl) {
-        font-size: 42px;
-        margin-bottom: 23px;
-      }
     }
     .header-section_subTitle {
       @include media-breakpoint-down(xl) {
@@ -30,12 +26,6 @@
       @include media-breakpoint-down(xl) {
         margin-bottom: 65px;
       }
-      .card-content-container_title {
-        @include media-breakpoint-down(xl) {
-          font-size: 32px;
-          line-height: 48px;
-        }
-      }
     }
   }
   .cards-columns-container {
@@ -44,18 +34,13 @@
 }
 
 .one-blog {
-  .header-section_backTo {
-    font-weight: 600;
-  }
   .header-section_title {
     margin-top: 38px;
-
     @include media-breakpoint-down(xl) {
       margin-top: 44px;
     }
   }
   .header-section_date {
-    font-weight: 600;
     @include media-breakpoint-down(xl) {
       font-size: 14px;
     }

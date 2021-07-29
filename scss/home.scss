@@ -171,7 +171,7 @@
 
     .video-section-videos {
       & > div {
-        h2 {
+        .video-title {
           margin-top: 71px;
           margin-bottom: 37px;
           @include media-breakpoint-down(lg) {
@@ -211,10 +211,8 @@
         }
       }
       @include media-breakpoint-down(lg) {
-        h3 {
-          font-size: 28px;
+        .giraffeMakeit-title {
           margin-bottom: 51px;
-          line-height: 45px;
         }
       }
     }
@@ -232,21 +230,16 @@
       padding-top: 84px;
       padding-bottom: 91px;
     }
-    h3 {
+    .contact-title {
       margin-bottom: 19px;
-      line-height: 55.51px;
-      color: $secondary;
       -webkit-text-stroke: 0.8px black;
       @include media-breakpoint-down(lg) {
-        font-size: 28px;
         margin-bottom: 25px;
       }
     }
     h4 {
       margin-bottom: 57px;
-      line-height: 47.58px;
       @include media-breakpoint-down(lg) {
-        font-size: 24px;
         margin-bottom: 51px;
       }
     }

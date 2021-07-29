@@ -14,17 +14,9 @@
     @include media-breakpoint-down(lg) {
       margin-bottom: 41px;
     }
-    h2 {
-      @include media-breakpoint-down(lg) {
-        font-size: 36px;
-        line-height: 43px;
-      }
-    }
   }
-  h5 {
+  .blog-section__subTitle {
     margin-bottom: 18px;
-    font-weight: 700;
-    line-height: 30px;
     @include media-breakpoint-down(lg) {
       margin-bottom: 29px;
     }
@@ -33,7 +25,6 @@
   p {
     @include media-breakpoint-down(lg) {
       margin-bottom: 20px;
-      line-height: 27px;
     }
   }
   button {

@@ -4,15 +4,6 @@
       padding: 0 24px;
       align-items: flex-start !important;
     }
-
-    .header-section_talk {
-      font-size: 24px;
-      color: #d99f23;
-      @include media-breakpoint-down(xl) {
-        font-size: 20px;
-        line-height: 39.65px;
-      }
-    }
   }
 
   .cards-section {
@@ -43,26 +34,12 @@
             display: none;
           }
           font-size: 14px;
-          line-height: 21px;
           margin-bottom: 54px;
-        }
-      }
-      .cards-section_cardContent-cons {
-        margin-right: 15px;
-        @include media-breakpoint-down(xl) {
-          margin-right: 0px;
-          margin-bottom: 0px;
         }
       }
       .cons-container {
         @include media-breakpoint-down(xl) {
           margin-bottom: 34px;
-        }
-      }
-      .cards-section_cardContent-pros {
-        margin-left: 15px;
-        @include media-breakpoint-down(xl) {
-          margin-left: 0px;
         }
       }
 
@@ -84,8 +61,6 @@
         .cards-section_cardContent-title {
           margin-bottom: 57px;
           font-size: 20px;
-          font-weight: 600;
-          color: #000000;
           @include media-breakpoint-down(xl) {
             font-size: 15px;
             margin-bottom: 37.85px;
@@ -102,11 +77,10 @@
           .cards-section_cardContent-common_talk {
             font-size: 15px;
             font-weight: 500;
-            color: #333333;
-            line-height: 22px;
+
             @include media-breakpoint-down(xl) {
               font-size: 12px;
-              line-height: 18px;
+
               br {
                 display: none;
               }

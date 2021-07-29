@@ -3,13 +3,10 @@
     padding-top: 82px;
     padding-bottom: 166px;
     .timeline-title {
-      color: #d99f23;
       margin-bottom: 51px;
-      font-size: 36px;
     }
     .history-timeline {
-      h2 {
-        font-size: 36px;
+      .timeline-title {
         margin-bottom: 51px;
       }
       .history-timeline__present {

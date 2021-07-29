@@ -28,7 +28,14 @@ h1 {
     margin-bottom: 23px;
   }
 }
-
+h2 {
+  font-size: 32px;
+  line-height: 63.44px;
+  @include media-breakpoint-down(lg) {
+    font-size: 28px;
+    line-height: 43px;
+  }
+}
 .font36 {
   font-size: 36px;
   line-height: 71px;

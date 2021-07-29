@@ -57,7 +57,7 @@
     }
     .active {
       font-weight: 500;
-      color: #000000;
+      color: $secondary;
       &:before {
         content: '';
         display: block;
