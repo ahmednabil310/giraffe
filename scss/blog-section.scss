@@ -4,7 +4,12 @@
   background-size: cover;
   padding-bottom: 50px;
   padding-top: 40px;
-  .blog-section__text {
+  button {
+    width: 207px;
+    height: 44px;
+    padding: 0;
+  }
+  .blog-section__title {
     margin-bottom: 51px;
     @include media-breakpoint-down(lg) {
       margin-bottom: 41px;

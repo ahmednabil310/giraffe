@@ -123,13 +123,9 @@
       padding-top: 45px;
     }
     .tower-section-title {
-      font-size: 36px;
-      line-height: 71.37px;
       margin-bottom: 41px;
       @include media-breakpoint-down(lg) {
         margin-bottom: 50px;
-        font-size: 28px;
-        line-height: 45px;
       }
     }
     .tower-section__text {
@@ -176,16 +172,11 @@
     .video-section-videos {
       & > div {
         h2 {
-          font-size: 36px;
           margin-top: 71px;
           margin-bottom: 37px;
-          font-weight: bold;
-          color: #000000;
           @include media-breakpoint-down(lg) {
-            font-size: 28px;
             margin-top: 39px;
             margin-bottom: 18px;
-            line-height: 42px;
           }
         }
       }
@@ -331,16 +322,15 @@
         padding-bottom: 0;
       }
       .whyGiraffe-section__text {
-        h2 {
+        .whyGiraffe-section__text-title {
           font-size: 42px;
-          color: $secondary;
         }
         & > * {
           margin-bottom: 38px;
         }
         @include media-breakpoint-down(lg) {
           order: 2;
-          h2 {
+          .whyGiraffe-section__text-title {
             font-size: 36px;
             margin-bottom: 28px;
           }
